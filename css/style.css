@@ -1,4 +1,4 @@
-/* Estilos Generales para el proyecto web con Bootstrap */
+/* _______________________________Estilos Generales para el proyecto web con Bootstrap _______________________________ */
 /* fuente de google */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
 
@@ -23,32 +23,9 @@ body {
     border-color: #FFA63D;
   }
   
-  .btn-secondary {
-    background-color: #D12E2E;
-    border-color: #D12E2E;
-  }
-  
-  .btn-success {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
-  }
-  
   /* Secciones */
   .section {
     padding: 50px 0;
-  }
-  
-  /* Colores de texto */
-  .text-primary {
-    color: #FFA63D;
-  }
-  
-  .text-secondary {
-    color: #D12E2E;
-  }
-  
-  .text-accent {
-    color: #4CAF50;
   }
   
   /* Pie de página */
@@ -57,22 +34,9 @@ body {
     color: #CCCCCC;
     padding: 20px 0;
   }
-  
-  /* Enlaces */
-  a {
-    color: #FFA63D;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #FFA63D;
-  }
+/* _______________________________FIN Estilos Generales para el proyecto web con Bootstrap _______________________________*/
 
-  
-/* FIN Estilos Generales para el proyecto web con Bootstrap */
-/* ___________________________________________________________________*/
-
-/* Estilos para el navegador principal */
+/* _______________________________ Estilos para el navegador principal _______________________________ */
 .navbar {
     background-color: #1E2A38; /* Color de fondo del nav */
   }
@@ -175,6 +139,20 @@ body {
     color: #FFA63D; /* Color al pasar el mouse por encima de los íconos */
   }
 
+  /* Estilos Formulario de reservas */
+  .reservation-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #reservation-message {
+    font-weight: bold;
+    text-align: center;
+  }
+
   /* Estilos para el formulario de búsqueda */
 .form-control {
   background-color: #2E3A48; /* Color de fondo del formulario */
@@ -238,13 +216,9 @@ body {
   width: 100%;
   height: 200px;
 }
+/* _______________________________Fin Estilos para el navegador principal_______________________________ */
 
-
-
-/* Fin Estilos para el navegador principal */
-/* _______________________________________________________________________*/
-
-/* Estilos generales para el footer */
+/* _______________________________ Estilos generales para el footer _______________________________*/
 footer {
   margin: auto;
   padding: 50px 0;
@@ -279,9 +253,9 @@ footer p {
   ;
 }
 
-/* Fin Estilos generales para el footer */
+/* _______________________________ Fin Estilos generales para el footer _______________________________ */
 
-/* ___________________ Estilos Index _____________________________________*/
+/* _______________________________ Estilos Index _______________________________*/
 
 /* Estilos para el carrusel de Bootstrap */
 .carousel {
@@ -508,9 +482,9 @@ footer p {
 }
  /* Fin Estilos para la Sección Nosotros */
 
- /* _______________________________ Fin estilos Index ________________*/
+ /* _______________________________ Fin estilos Index _______________________________*/
 
- /* Estilos Pagina Destino.html */
+ /* _______________________________ Estilos Pagina Destino.html _______________________________ */
 
  /* Estilos Banner **/
  .banner {
@@ -576,3 +550,21 @@ footer p {
   color: #666666; /* Color del texto */
 }
 /* Fin Card Destino */
+ /* _______________________________ Fin Estilos Pagina Destino.html _______________________________ */
+
+/* _______________________________ Pagina Destino Detalle _______________________________*/
+.tour-details {
+  padding: 80px 0;
+}
+
+.tour-details .description {
+  margin-bottom: 30px;
+}
+
+.tour-details h2 {
+  margin-bottom: 20px;
+}
+
+.tour-details img {
+  max-width: 50%;
+}

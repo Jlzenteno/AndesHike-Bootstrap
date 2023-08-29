@@ -10,13 +10,9 @@
   <link rel="shortcut icon" href="img/Logo Hike Andes.png" type="image/png">
   <!-- Bootstrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- Estilos CSS Propios-->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
-<!-- Contenido Pagina Web-->
 
 <body>
   <!-- Navegacion Bootstrap -->
@@ -49,33 +45,35 @@
                 <i class='bx bxs-home'></i> Inicio
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown"> <!-- Menu desplegable -->
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <i class='bx bx-walk'></i> Aventuras
+                <i class='bx bx-walk'></i> Servicios
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Trekking y Excursiones</a></li>
-                <li><a class="dropdown-item" href="#">Alta Montaña</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/Trekking.html">Trekking</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/Excursiones.html">Excursiones</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/AltaMontana.html">Alta Montaña</a></li>
                 <li>
-                <li><a class="dropdown-item" href="#">Rafting y Kayak</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/Rafting.html">Rafting</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/Kayak.html">Kayak</a></li>
                 <li>
-                <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
-                <li><a class="dropdown-item" href="#">Esquí y Snowboard</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/MountainBike.html">Mountain Bike</a></li>
+                <li><a class="dropdown-item" href="./pages/Servicios/Esqui-Snowboard.html">Esquí y Snowboard</a></li>
               </ul>
-            </li>
+            </li> <!-- Fin Menu desplegable -->
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="./pages/Destinos.html">
                 <i class='bx bxs-map'></i> Destinos
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="./pages/Alojamiento.html">
                 <i class='bx bxs-hotel'></i> Alojamiento
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="./pages/Contacto.html">
                 <i class='bx bxs-contact'></i> Contacto
               </a>
             </li>
@@ -121,7 +119,10 @@
             </p>
           </div>
           <div class="navbar-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -129,7 +130,8 @@
   </nav>
   <!-- Fin Navegacion Bootstrap -->
 
-  <!-- Inicio Contenido de la Pagina -->
+  <!-- ________________ Inicio Contenido de la Pagina ________________ -->
+
   <!-- Carrusel de Bootstrap -->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
@@ -173,6 +175,7 @@
     </button>
   </div>
   <!-- Fin Carrusel de Bootstrap -->
+
   <!-- Seccion Aventuras -->
   <section class="adventures-section py-5">
     <div class="container">
@@ -243,17 +246,19 @@
     </div>
   </section>
   <!-- Fin Seccion Destinos -->
-    <!-- Seccion de llamada a la accion -->
-    <section class="cta-section text-center py-5">
-      <div class="container">
-        <h2 class="text-white mb-4">¡Embárcate en una Aventura Inolvidable con Andes Hike!</h2>
-        <p class="text-white mb-4">Descubre paisajes impresionantes, sumérgete en la cultura local y vive emocionantes
-          experiencias en los Andes.</p>
-        <h3>¡Reserva tu aventura ahora!</h3>
-        <a href="#" class="btn btn-primary btn-lg">Reservar Ahora</a>
-      </div>
-    </section>
-    <!-- Fin Seccion de llamada a la accion -->
+
+  <!-- Seccion de llamada a la accion -->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h2 class="text-white mb-4">¡Embárcate en una Aventura Inolvidable con Andes Hike!</h2>
+      <p class="text-white mb-4">Descubre paisajes impresionantes, sumérgete en la cultura local y vive emocionantes
+        experiencias en los Andes.</p>
+      <h3>¡Reserva tu aventura ahora!</h3>
+      <a href="#" class="btn btn-primary btn-lg">Reservar Ahora</a>
+    </div>
+  </section>
+  <!-- Fin Seccion de llamada a la accion -->
+
   <!-- Seccion de Suscripcion -->
   <section class="subscribe-section py-5">
     <div class="container">
@@ -264,7 +269,8 @@
           <!-- Formulario de Suscripción -->
           <form class="subscribe-form mt-4">
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Correo electrónico" aria-describedby="subscribe-btn">
+              <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                aria-label="Correo electrónico" aria-describedby="subscribe-btn">
               <button class="btn btn-primary" type="button" id="subscribe-btn">Suscribirse</button>
             </div>
           </form>
@@ -273,6 +279,7 @@
     </div>
   </section>
   <!-- Fin Seccion de Suscripcion -->
+
   <!-- Seccion Actividades -->
   <section class="activity-types-section py-5">
     <div class="container">
@@ -324,6 +331,7 @@
     </div>
   </section>
   <!-- Fin Seccion Actividades -->
+
   <!-- Seccion de Nosotros -->
   <section class="about-section py-5">
     <div class="container">
@@ -335,19 +343,23 @@
           <h2 class="about-title">Nosotros</h2>
           <p class="about-text">Somos una empresa apasionada por brindar experiencias de turismo de aventura en los
             hermosos paisajes de la Cordillera de los Andes y el Océano Pacífico. Nuestro objetivo es ofrecer a nuestros
-            aventureros la oportunidad de explorar destinos únicos, participar en emocionantes actividades y conectarse con
+            aventureros la oportunidad de explorar destinos únicos, participar en emocionantes actividades y conectarse
+            con
             la naturaleza de una manera significativa.</p>
         </div>
       </div>
     </div>
   </section>
   <!-- Fin Seccion de Nosotros -->
- <!-- Seccion Footer -->
+
+  <!-- ________________ Fin Contenido de la Pagina ________________ -->
+
+  <!-- Seccion Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-3 d-none d-md-block">
-          <h5>Aventura</h5>
+          <h5>Servicios</h5>
           <ul class="list-unstyled">
             <li><a href="#">Trekking</a></li>
             <li><a href="#">Alta Montaña</a></li>
@@ -371,39 +383,41 @@
         <div class="col-md-3 d-none d-md-block">
           <h5>Menú</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Aventuras</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Alojamiento</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Terminos y Condiciones</a></li>
+            <li><a href="./pages/Servicios.html">Servicios</a></li>
+            <li><a href="./pages/Destinos.html">Destinos</a></li>
+            <li><a href="./pages/Alojamiento.html">Alojamiento</a></li>
+            <li><a href="./pages/Contacto.html">Contacto</a></li>
+            <li><a href="./pages/Faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="./pages/Terminosycondiciones.html">Terminos y Condiciones</a></li>
           </ul>
         </div>
         <div class="col-md-3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
+            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
- <!-- Caja Pie -->
+      <!-- Caja Pie -->
       <div class="row mt-4">
         <div class="col-md-6">
           <p>&copy; 2023 Andes Hike. Todos los derechos reservados.</p>
         </div>
         <div class="col-md-6">
           <ul class="list-inline text-end">
-            <li class="list-inline-item"><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class='bx bxl-whatsapp-square' ></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-whatsapp-square'></i></a></li>
           </ul>
-        </div>  
+        </div>
       </div>
     </div>
   </footer>
- <!-- Fin Seccion Footer -->
+  <!-- Fin Seccion Footer -->
+
   <!-- Scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/javascript.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/javascript.js"></script>
+  <!-- Fin Scrips -->
 </body>
 </html>
