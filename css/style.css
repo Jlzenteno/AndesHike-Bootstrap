@@ -1,0 +1,197 @@
+/* Estilos Generales para el proyecto web con Bootstrap */
+body {
+    background-color: #1E2A38;
+    color: #FFFFFF;
+  }
+  
+  /* Encabezado */
+  .navbar {
+    background-color: #1E2A38;
+  }
+  
+  .navbar-brand {
+    color: #FFA63D;
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .btn-primary {
+    background-color: #FFA63D;
+    border-color: #FFA63D;
+  }
+  
+  .btn-secondary {
+    background-color: #D12E2E;
+    border-color: #D12E2E;
+  }
+  
+  .btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  /* Secciones */
+  .section {
+    padding: 50px 0;
+  }
+  
+  /* Colores de texto */
+  .text-primary {
+    color: #FFA63D;
+  }
+  
+  .text-secondary {
+    color: #D12E2E;
+  }
+  
+  .text-accent {
+    color: #4CAF50;
+  }
+  
+  /* Pie de página */
+  .footer {
+    background-color: #2E3A48;
+    color: #CCCCCC;
+    padding: 20px 0;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #FFA63D;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #D12E2E;
+  }
+/* FIN Estilos Generales para el proyecto web con Bootstrap */
+/* ___________________________________________________________________*/
+
+/* Estilos para el navegador principal */
+.navbar {
+    background-color: #1E2A38; /* Color de fondo del nav */
+  }
+  
+  /* Estilos para el contenedor personalizado del logo */
+  .navbar-logo {
+    padding: 10px 0; /* Espaciado alrededor del logo */
+  }
+  /* Estilos para el logo */
+.navbar-brand img {
+    max-height: 50px; /* Tamaño máximo del logo */
+}
+  /* Estilos para los enlaces del menú de navegación */
+  .navbar-nav .nav-link {
+    color: #FFFFFF; /* Color de los enlaces */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #FFA63D; /* Color al pasar el mouse por encima de los enlaces */
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .form-control {
+    background-color: #2E3A48; /* Color de fondo del formulario */
+    color: #FFFFFF; /* Color del texto del formulario */
+  }
+  
+  .btn-success {
+    background-color: #4CAF50; /* Color de fondo del botón "Buscar" */
+    border-color: #4CAF50; /* Color del borde del botón "Buscar" */
+  }
+  
+  /* Estilos para el menú offcanvas */
+  .offcanvas-header {
+    background-color: #1E2A38; /* Color de fondo del encabezado del menú offcanvas */
+    border-bottom: 1px solid #4CAF50; /* Borde inferior del encabezado */
+  }
+  
+  .offcanvas-title {
+    color: #FFFFFF; /* Color del texto del título del menú offcanvas */
+  }
+  
+  .offcanvas-body {
+    background-color: #1E2A38; /* Color de fondo del cuerpo del menú offcanvas */
+  }
+  
+  /* Estilos para el menú desplegable "Aventuras" */
+.navbar-nav .dropdown {
+  position: relative; /* Posición relativa para el menú desplegable */
+}
+
+.navbar-nav .dropdown-toggle {
+  color: #FFFFFF; /* Color del enlace del menú desplegable */
+  font-size: 16px; /* Tamaño del texto */
+  transition: color 0.3s; /* Transición de color */
+}
+
+.navbar-nav .dropdown-toggle:hover {
+  color: #FFA63D; /* Color al pasar el mouse por encima del enlace */
+}
+
+.dropdown-menu {
+  background-color: #1E2A38; /* Color de fondo del menú desplegable */
+  border: none; /* Eliminar el borde */
+  border-radius: 0; /* Bordes rectos */
+  margin-top: 5px; /* Espaciado superior */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.dropdown-item {
+  color: #FFFFFF; /* Color del texto del menú desplegable */
+  font-size: 14px; /* Tamaño del texto */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.dropdown-item:hover {
+  background-color: #2E3A48; /* Color de fondo al pasar el mouse por encima */
+  color: #FFA63D; /* Color del texto al pasar el mouse por encima */
+}
+
+  /* Estilos para los íconos de redes sociales */
+.navbar-nav.social-icons {
+    display: flex; /* Mostrar los íconos en una fila */
+    flex-direction: row;
+    align-items: center; /* Alinear verticalmente al centro */
+  }
+  .navbar-social-title {
+    color: #FFFFFF; /* Color del título */
+    font-size: 14px; /* Tamaño del título */
+    margin-bottom: 5px; /* Espaciado inferior */
+  }
+  .navbar-nav.social-icons .nav-link {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    margin: 0 10px; /* Espaciado entre los íconos */
+    color: #FFFFFF; /* Color de los íconos */
+    transition: color 0.3s; /* Transición de color */
+  }
+  .navbar-nav.social-icons .nav-link:hover {
+    color: #FFA63D; /* Color al pasar el mouse por encima de los íconos */
+  }
+
+  /* Estilos para el formulario de búsqueda */
+.form-control {
+  background-color: #2E3A48; /* Color de fondo del formulario */
+  color: #FFFFFF; /* Color del texto del formulario */
+  border: none; /* Eliminar el borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 8px 12px; /* Espaciado interno */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.form-control:focus {
+  background-color: #37475A; /* Color de fondo al enfocar */
+  color: #FFFFFF; /* Color del texto al enfocar */
+  outline: none; /* Eliminar el contorno al enfocar */
+}
+
+.btn-success {
+  background-color: #4CAF50; /* Color de fondo del botón "Buscar" */
+  border: none; /* Eliminar el borde del botón */
+}
+.btn-success:hover {
+  background-color: #FFA63D; /* Color de fondo del botón "Buscar" */
+  border: none; /* Eliminar el borde del botón */
+}
+/* Fin Estilos para el navegador principal */
+/* _______________________________________________________________________*/
