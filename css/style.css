@@ -195,3 +195,40 @@ body {
 }
 /* Fin Estilos para el navegador principal */
 /* _______________________________________________________________________*/
+
+/* Estilos Index */
+
+/* Estilos para el carrusel de Bootstrap */
+.carousel {
+  margin-top: 100px; /* Espaciado superior */
+  padding: 5px;
+}
+
+.carousel-inner {
+  border-radius: 8px; /* Bordes redondeados para el contenido del carrusel */
+  overflow: hidden; /* Ocultar contenido que sobrepase los bordes */
+}
+
+.carousel-item img {
+  max-height: 100%; /* Altura máxima de las imágenes del carrusel */
+  object-fit: cover; /* Ajustar imagen para llenar el contenedor */
+}
+
+.carousel-caption {
+  background-color: rgba(30, 42, 56, 0.7); /* Fondo semitransparente */
+  border-radius: 8px; /* Bordes redondeados para la caja de texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+.carousel-caption h5 {
+  color: #FFFFFF; /* Color del título */
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.carousel-caption p {
+  color: #FFFFFF; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+}
+/* Fin Estilos para el carrusel de Bootstrap */
+

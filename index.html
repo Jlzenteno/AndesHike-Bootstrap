@@ -48,32 +48,33 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class='bx bx-walk' ></i> Aventuras
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class='bx bx-walk'></i> Aventuras
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Trekking y Excursiones</a></li>
                 <li><a class="dropdown-item" href="#">Alta Montaña</a></li>
                 <li>
-                  <li><a class="dropdown-item" href="#">Rafting y Kayak</a></li>
+                <li><a class="dropdown-item" href="#">Rafting y Kayak</a></li>
                 <li>
-                  <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
-                  <li><a class="dropdown-item" href="#">Esquí y Snowboard</a></li>
+                <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
+                <li><a class="dropdown-item" href="#">Esquí y Snowboard</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class='bx bxs-map' ></i> Destinos
+                <i class='bx bxs-map'></i> Destinos
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class='bx bxs-hotel' ></i> Alojamiento
+                <i class='bx bxs-hotel'></i> Alojamiento
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class='bx bxs-contact' ></i> Contacto
+                <i class='bx bxs-contact'></i> Contacto
               </a>
             </li>
           </ul>
@@ -84,22 +85,22 @@
             <ul class="navbar-nav social-icons">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class='bx bxl-facebook-circle' ></i>
+                  <i class='bx bxl-facebook-circle'></i>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class='bx bxl-instagram-alt' ></i>
+                  <i class='bx bxl-instagram-alt'></i>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class='bx bxl-youtube' ></i>
+                  <i class='bx bxl-youtube'></i>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class='bx bxl-whatsapp-square' ></i>
+                  <i class='bx bxl-whatsapp-square'></i>
                 </a>
               </li>
             </ul>
@@ -113,15 +114,58 @@
       </div>
     </div>
   </nav>
+  <!-- Fin Navegacion Bootstrap -->
 
+  <!-- Inicio Contenido de la Pagina -->
+  <!-- Carrusel de Bootstrap -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carrusel/Adventure 1.jpg" class="d-block w-100" alt="Adventure 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explora la majestuosidad de los Andes</h5>
+          <p>Descubre emocionantes aventuras en las montañas más altas del mundo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/Adventure 2.jpg" class="d-block w-100" alt="Adventure 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sumérgete en la cultura local</h5>
+          <p>Experimenta la rica cultura y tradiciones de las comunidades andinas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/Adventure 3.jpg" class="d-block w-100" alt="Adventure 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vive la adrenalina en el agua</h5>
+          <p>Embárcate en emocionantes aventuras de rafting y kayak en ríos cristalinos.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fin Carrusel de Bootstrap -->
+ 
+    <!-- Resto del contenido de la página aquí -->
 
-
-
-  <!-- Resto del contenido de la página aquí -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
