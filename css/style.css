@@ -62,7 +62,7 @@ body {
   }
   
   a:hover {
-    color: #D12E2E;
+    color: #FFA63D;
   }
 /* FIN Estilos Generales para el proyecto web con Bootstrap */
 /* ___________________________________________________________________*/
@@ -196,7 +196,7 @@ body {
 /* Fin Estilos para el navegador principal */
 /* _______________________________________________________________________*/
 
-/* Estilos Index */
+/* ___________________ Estilos Index _____________________________________*/
 
 /* Estilos para el carrusel de Bootstrap */
 .carousel {
@@ -232,3 +232,193 @@ body {
 }
 /* Fin Estilos para el carrusel de Bootstrap */
 
+/* Estilos para la sección de "Call to Action" */
+.cta-section {
+  background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+  background-color: #2E3A48;
+  background-position: center; /* Centrar la imagen de fondo */
+  padding: 100px 0; /* Espaciado vertical */
+}
+
+.cta-section h2 {
+  font-size: 32px; /* Tamaño del título */
+  color: #FFFFFF; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.cta-section h3 {
+  font-size: 30px; /* Tamaño del texto */
+  color: #FFFFFF; /* Color del texto */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.cta-section p {
+  font-size: 18px; /* Tamaño del texto */
+  color: #FFFFFF; /* Color del texto */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.cta-section .btn {
+  font-size: 20px; /* Tamaño del botón */
+  padding: 15px 30px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+.cta-section .btn-primary {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  border-color: #CCCCCC; /* Color del borde del botón */
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #FFA63D; /* Color de fondo al pasar el mouse por encima */
+  border-color: #FFC874; /* Color del borde al pasar el mouse por encima */
+}
+/* Fin Estilos para la sección de "Call to Action" */
+
+/* Estilos para la sección de aventuras */
+.adventures-section {
+  background-color: #F9F9F9; /* Color de fondo de la sección */
+  padding: 100px 0; /* Espaciado vertical */
+}
+
+.adventures-section h2 {
+  font-size: 32px; /* Tamaño del título */
+  color: #333333; /* Color del texto */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.adventure-card {
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s; /* Transición de transformación */
+}
+
+.adventure-card:hover {
+  transform: translateY(-5px); /* Levantar la tarjeta al pasar el mouse por encima */
+}
+
+.adventure-card img {
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.adventure-card .card-body {
+  padding: 20px; /* Espaciado interno */
+}
+
+.adventure-card h2.card-title {
+  font-size: 24px; /* Tamaño del título */
+  color: #333333; /* Color del texto del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.adventure-card p.card-text {
+  font-size: 16px; /* Tamaño del texto */
+  color: #666666; /* Color del texto */
+}
+
+/* Estilos para la sección de tipos de actividades */
+.activity-types-section {
+  background-color: #2E3A48; /* Color de fondo de la sección */
+  padding: 100px 0; /* Espaciado vertical */
+}
+/* Fin Estilos para la sección de aventuras */
+
+/* Estilos para las tarjetas de actividades */
+.activity-card {
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s; /* Transición de transformación */
+  background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen de fondo */
+  height: 300px; /* Altura fija para todas las tarjetas */
+}
+
+.activity-card:hover {
+  transform: translateY(-5px); /* Levantar la tarjeta al pasar el mouse por encima */
+}
+
+.activity-card .card-body {
+  padding: 20px; /* Espaciado interno */
+}
+
+.activity-card h3.card-title {
+  font-size: 24px; /* Tamaño del título */
+  color: #FFFFFF; /* Color del texto del título */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  padding: 10px 0; /* Espaciado interno del título */
+  border-radius: 0 0 8px 8px; /* Bordes redondeados solo en la parte inferior */
+}
+/* Fin Estilos para las tarjetas de actividades */
+
+/* Estilos para el Formulario de Suscripción */
+.subscribe-section {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.subscribe-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.subscribe-text {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  border-radius: 0;
+  background-color: #4CAF50;
+  border-color: #CCCCCC;
+}
+
+.btn-primary:hover {
+  background-color: #FFA63D;
+  border-color: #666666;
+}
+/* Fin Estilos para la Sección de Suscripción */
+
+/* Estilos para la Sección Nosotros */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ /* Fin Estilos para la Sección Nosotros */
