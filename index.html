@@ -261,39 +261,45 @@
   <!-- Fin Seccion Destinos -->
 
   <!-- Seccion de llamada a la accion -->
-  <section class="cta-section text-center py-5">
+  <section class="cta-section">
+    <video class="video-background" autoplay muted loop>
+      <source src="./media/BN AndesHike Destino.mp4" type="video/mp4">
+    </video>
     <div class="container">
-      <h2 class="text-white mb-4">¡Embárcate en una Aventura Inolvidable con Andes Hike!</h2>
-      <p class="text-white mb-4">Descubre paisajes impresionantes, sumérgete en la cultura local y vive emocionantes
-        experiencias en los Andes.</p>
-      <h3>¡Reserva tu aventura ahora!</h3>
-      <a href="./pages/Destinos.html" class="btn btn-primary btn-lg">Reservar Ahora</a>
-    </div>
-  </section>
-  <!-- Fin Seccion de llamada a la accion -->
-
-  <!-- Seccion de Suscripcion -->
-  <section class="subscribe-section py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center">
-          <h2 class="subscribe-title mb-4">¡Únete a nuestra comunidad de aventureros!</h2>
-          <p class="subscribe-text">Recibe nuestras últimas noticias, ofertas especiales y más.</p>
-          <!-- Formulario de Suscripción -->
-          <form class="subscribe-form mt-4">
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Tu correo electrónico"
-                aria-label="Correo electrónico" aria-describedby="subscribe-btn">
-              <button class="btn btn-primary" type="button" id="subscribe-btn">Suscribirse</button>
-            </div>
-          </form>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="cta-content">
+            <h2>¡Embárcate en una Aventura Inolvidable!</h2>
+            <p>Descubre destinos emocionantes y vive experiencias únicas.</p>
+            <a href="./pages/Destinos.html" class="btn btn-primary cta-button">Explora Ahora</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Fin Seccion de Suscripcion -->
+  <!-- Fin Seccion de llamada a la accion -->
 
-  <!-- Seccion Actividades -->
+ <!-- Seccion de Nosotros -->
+ <section class="about-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/nosotros.jpg" alt="Nosotros" class="about-img">
+      </div>
+      <div class="col-md-6">
+        <h2 class="about-title">Nosotros</h2>
+        <p class="about-text">Somos una empresa apasionada por brindar experiencias de turismo de aventura en los
+          hermosos paisajes de la Cordillera de los Andes y el Océano Pacífico. Nuestro objetivo es ofrecer a nuestros
+          aventureros la oportunidad de explorar destinos únicos, participar en emocionantes actividades y conectarse
+          con
+          la naturaleza de una manera significativa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin Seccion de Nosotros -->
+
+  <!-- Seccion Nuestros Servicios -->
   <section class="activity-types-section py-5">
     <div class="container">
       <h2 class="text-center mb-4">Nuestros Servicios</h2>
@@ -345,25 +351,26 @@
   </section>
   <!-- Fin Seccion Actividades -->
 
-  <!-- Seccion de Nosotros -->
-  <section class="about-section py-5">
+  <!-- Seccion de Suscripcion -->
+  <section class="subscribe-section py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/nosotros.jpg" alt="Nosotros" class="about-img">
-        </div>
-        <div class="col-md-6">
-          <h2 class="about-title">Nosotros</h2>
-          <p class="about-text">Somos una empresa apasionada por brindar experiencias de turismo de aventura en los
-            hermosos paisajes de la Cordillera de los Andes y el Océano Pacífico. Nuestro objetivo es ofrecer a nuestros
-            aventureros la oportunidad de explorar destinos únicos, participar en emocionantes actividades y conectarse
-            con
-            la naturaleza de una manera significativa.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <h2 class="subscribe-title mb-4">¡Únete a nuestra comunidad de aventureros!</h2>
+          <p class="subscribe-text">Recibe nuestras últimas noticias, ofertas especiales y más.</p>
+          <!-- Formulario de Suscripción -->
+          <form class="subscribe-form mt-4">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                aria-label="Correo electrónico" aria-describedby="subscribe-btn">
+              <button class="btn btn-primary" type="button" id="subscribe-btn">Suscribirse</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <!-- Fin Seccion de Nosotros -->
+  <!-- Fin Seccion de Suscripcion -->
 
   <!-- ________________ Fin Contenido de la Pagina ________________ -->
 
@@ -428,8 +435,13 @@
   </footer>
   <!-- Fin Seccion Footer -->
 
-  <!-- Scripts-->
+  
+   <!-- Scripts de Bootstrap -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
+<!-- Scripts Custom-->
   <script src="../js/javascript.js"></script>
   <!-- Fin Scrips -->
 </body>

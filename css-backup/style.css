@@ -1,41 +1,45 @@
-/* Resetear estilos por defecto */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-weight: 400;
-  list-style: none;
-}
-
-/* ____________ Estilos Generales para el proyecto web con Bootstrap ____________ */
+/* _______________________________Estilos Generales para el proyecto web con Bootstrap _______________________________ */
 /* fuente de google */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
 
-/* Fuentes descargadas en el Sitio */
-@font-face {
-  font-family: "Vintage Handmade";
-  src: url(/fonts/Vintage\ Handmade.ttf);
+body {
+  background-color: #1E2A38;
+  color: #FFFFFF;
 }
 
-/* Paleta de colores */
-:root {
-  --color-negro: #333333;
-  --color-oscuro: #1E2A38;
-  --color-verde: #006400;
-  --color-amarillo: #FFA63D;
-  --color-gris: #333333;
-  --color-blanco: #ffffff;
-  --color-azul: #87ceeb;
-  --color-marron: #8b4513;
-  --color-formCTR: #2E3A48;
+/* Encabezado */
+.navbar {
+  background-color: #1E2A38;
+}
+
+.navbar-brand {
+  color: #FFA63D;
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #FFA63D;
+  border-color: #FFA63D;
+}
+
+/* Secciones */
+.section {
+  padding: 50px 0;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #2E3A48;
+  color: #CCCCCC;
+  padding: 20px 0;
 }
 
 /* _______________________________FIN Estilos Generales para el proyecto web con Bootstrap _______________________________*/
 
 /* _______________________________ Estilos para el navegador principal _______________________________ */
 .navbar {
-  background-color: var(--color-oscuro);
+  background-color: #1E2A38;
   /* Color de fondo del nav */
 }
 
@@ -47,51 +51,51 @@
 
 /* Estilos para el logo */
 .navbar-brand img {
-  max-height: 4rem;
+  max-height: 50px;
   /* Tamaño máximo del logo */
 }
 
 /* Estilos para los enlaces del menú de navegación */
 .navbar-nav .nav-link {
-  color: var(--color-blanco)
+  color: #FFFFFF;
   /* Color de los enlaces */
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--color-amarillo)
+  color: #FFA63D;
   /* Color al pasar el mouse por encima de los enlaces */
 }
 
 /* Estilos para el botón de búsqueda */
 .form-control {
-  background-color: var(--color-gris);
+  background-color: #2E3A48;
   /* Color de fondo del formulario */
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto del formulario */
 }
 
 .btn-success {
-  background-color: var(--color-verde);
+  background-color: #4CAF50;
   /* Color de fondo del botón "Buscar" */
-  border-color: var(--color-verde);
+  border-color: #4CAF50;
   /* Color del borde del botón "Buscar" */
 }
 
 /* Estilos para el menú offcanvas */
 .offcanvas-header {
-  background-color: var(--color-oscuro);
+  background-color: #1E2A38;
   /* Color de fondo del encabezado del menú offcanvas */
-  border-bottom: 1px solid var(--color-verde);
+  border-bottom: 1px solid #4CAF50;
   /* Borde inferior del encabezado */
 }
 
 .offcanvas-title {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto del título del menú offcanvas */
 }
 
 .offcanvas-body {
-  background-color: var(--color-oscuro);
+  background-color: #1E2A38;
   /* Color de fondo del cuerpo del menú offcanvas */
 }
 
@@ -102,7 +106,7 @@
 }
 
 .navbar-nav .dropdown-toggle {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del enlace del menú desplegable */
   font-size: 16px;
   /* Tamaño del texto */
@@ -111,25 +115,25 @@
 }
 
 .navbar-nav .dropdown-toggle:hover {
-  color: var(--color-amarillo);
+  color: #FFA63D;
   /* Color al pasar el mouse por encima del enlace */
 }
 
 .dropdown-menu {
-  background-color: var(--color-oscuro);
+  background-color: #1E2A38;
   /* Color de fondo del menú desplegable */
   border: none;
   /* Eliminar el borde */
-  border-radius: 0px;
+  border-radius: 0;
   /* Bordes rectos */
-  margin-top: 3px;
+  margin-top: 5px;
   /* Espaciado superior */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   /* Sombra */
 }
 
 .dropdown-item {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto del menú desplegable */
   font-size: 14px;
   /* Tamaño del texto */
@@ -138,9 +142,9 @@
 }
 
 .dropdown-item:hover {
-  background-color: var(--color-oscuro);
+  background-color: #2E3A48;
   /* Color de fondo al pasar el mouse por encima */
-  color: var(--color-amarillo);
+  color: #FFA63D;
   /* Color del texto al pasar el mouse por encima */
 }
 
@@ -154,14 +158,13 @@
 }
 
 .navbar-social-title {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del título */
-  font-size: 1rem;
+  font-size: 14px;
   /* Tamaño del título */
   font-weight: bold;
   margin-bottom: 5px;
   /* Espaciado inferior */
- 
 }
 
 .navbar-nav.social-icons .nav-link {
@@ -169,14 +172,14 @@
   /* Tamaño de los íconos */
   margin: 0 10px;
   /* Espaciado entre los íconos */
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color de los íconos */
   transition: color 0.3s;
   /* Transición de color */
 }
 
 .navbar-nav.social-icons .nav-link:hover {
-  color: var(--color-amarillo);
+  color: #FFA63D;
   /* Color al pasar el mouse por encima de los íconos */
 }
 
@@ -189,11 +192,16 @@
   border-radius: 5px;
 }
 
+#reservation-message {
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Estilos para el formulario de búsqueda */
 .form-control {
-  background-color: var(--color-formCTR);
+  background-color: #2E3A48;
   /* Color de fondo del formulario */
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto del formulario */
   border: none;
   /* Eliminar el borde */
@@ -206,23 +214,23 @@
 }
 
 .form-control:focus {
-  background-color: var(--color-formCTR);
+  background-color: #37475A;
   /* Color de fondo al enfocar */
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto al enfocar */
   outline: none;
   /* Eliminar el contorno al enfocar */
 }
 
 .btn-success {
-  background-color: var(--color-verde);
+  background-color: #4CAF50;
   /* Color de fondo del botón "Buscar" */
   border: none;
   /* Eliminar el borde del botón */
 }
 
 .btn-success:hover {
-  background-color: var(--color-amarillo);
+  background-color: #FFA63D;
   /* Color de fondo del botón "Buscar" */
   border: none;
   /* Eliminar el borde del botón */
@@ -277,13 +285,13 @@ footer {
 
 /* Estilos para los enlaces del menú */
 footer a {
-  color: var(--color-blanco);
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 footer a:hover {
-  color: var(--color-amarillo);
+  color: #FFA63D;
 }
 
 /* Estilos para el copy */
@@ -293,14 +301,14 @@ footer p {
 
 /* Estilos para los íconos de redes sociales */
 .list-inline-item a {
-  color: var(--color-blanco);
-  font-size: 2rem;
-  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 25px;
+  margin-right: 15px;
   transition: color 0.3s;
 }
 
 .list-inline-item a:hover {
-  color: var(--color-amarillo);
+  color: #FFA63D;
   ;
 }
 
@@ -312,7 +320,7 @@ footer p {
 .carousel {
   margin-top: 100px;
   /* Espaciado superior */
-  padding: 1px;
+  padding: 5px;
 }
 
 .carousel-inner {
@@ -339,7 +347,7 @@ footer p {
 }
 
 .carousel-caption h5 {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del título */
   font-size: 24px;
   /* Tamaño del título */
@@ -348,7 +356,7 @@ footer p {
 }
 
 .carousel-caption p {
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto */
   font-size: 16px;
   /* Tamaño del texto */
@@ -356,20 +364,83 @@ footer p {
 
 /* Fin Estilos para el carrusel de Bootstrap */
 
-/* Estilos para la Seccion Nuestros Destinos */
+/* Estilos para la sección de "Call to Action" */
+.cta-section {
+  background-size: cover;
+  /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+  background-color: #2E3A48;
+  background-position: center;
+  /* Centrar la imagen de fondo */
+  padding: 100px 0;
+  /* Espaciado vertical */
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  /* Tamaño del título */
+  color: #FFFFFF;
+  /* Color del texto */
+  margin-bottom: 20px;
+  /* Espaciado inferior */
+}
+
+.cta-section h3 {
+  font-size: 30px;
+  /* Tamaño del texto */
+  color: #FFFFFF;
+  /* Color del texto */
+  margin-bottom: 30px;
+  /* Espaciado inferior */
+}
+
+.cta-section p {
+  font-size: 18px;
+  /* Tamaño del texto */
+  color: #FFFFFF;
+  /* Color del texto */
+  margin-bottom: 40px;
+  /* Espaciado inferior */
+}
+
+.cta-section .btn {
+  font-size: 20px;
+  /* Tamaño del botón */
+  padding: 15px 30px;
+  /* Espaciado interno del botón */
+  border-radius: 5px;
+  /* Bordes redondeados del botón */
+}
+
+.cta-section .btn-primary {
+  background-color: #4CAF50;
+  /* Color de fondo del botón */
+  border-color: #CCCCCC;
+  /* Color del borde del botón */
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #FFA63D;
+  /* Color de fondo al pasar el mouse por encima */
+  border-color: #FFC874;
+  /* Color del borde al pasar el mouse por encima */
+}
+
+/* Fin Estilos para la sección de "Call to Action" */
+
+/* Estilos para la sección de aventuras */
 .adventures-section {
-  background-color: var(--color-blanco);
+  background-color: #F9F9F9;
   /* Color de fondo de la sección */
   padding: 100px 0;
   /* Espaciado vertical */
 }
 
 .adventures-section h2 {
-  font-size: 2,5rem;
+  font-size: 32px;
   /* Tamaño del título */
-  color: var(--color-negro);
+  color: #333333;
   /* Color del texto */
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   /* Espaciado inferior */
 }
 
@@ -402,7 +473,7 @@ footer p {
 .adventure-card h2.card-title {
   font-size: 24px;
   /* Tamaño del título */
-  color: var(--color-oscuro);
+  color: #333333;
   /* Color del texto del título */
   margin-bottom: 10px;
   /* Espaciado inferior */
@@ -411,89 +482,21 @@ footer p {
 .adventure-card p.card-text {
   font-size: 16px;
   /* Tamaño del texto */
-  color: var(--color-gris);
+  color: #666666;
   /* Color del texto */
 }
-/* FIN Estilos para la Seccion Nuestros Destinos */
 
-/* Estilos para la sección de "Call to Action" */
-.cta-section {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-}
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-.cta-content {
-  position: relative;
-  text-align: center;
-  padding: 100px 0;
-  color: var(--color-gris);
-  z-index: 1;
-}
-.cta-button {
-  margin-top: 20px;
-}
-/* Fin Estilos para la sección de "Call to Action" */
-
-/* Estilos para la Sección Nosotros */
-.about-section {
-  background-color: var(--color-blanco);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-}
-
-.about-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-negro);
-  margin-bottom: 30px;
-}
-
-.about-text {
-  font-size: 1rem;
-  color: #666666;
-  margin-bottom: 50px;
-}
-
-.about-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* Fin Estilos para la Sección Nosotros */
-
-
-/* Estilos para la sección Nuestros Servicios */
+/* Estilos para la sección de tipos de actividades */
 .activity-types-section {
-  background-color: var(--color-oscuro);
+  background-color: #2E3A48;
   /* Color de fondo de la sección */
   padding: 100px 0;
   /* Espaciado vertical */
 }
 
-.activity-types-section h2 {
-  font-size: 2,5rem;
-  /* Tamaño del título */
-  color: var(--color-blanco);
-  /* Color del texto */
-  margin-bottom: 30px;
-  /* Espaciado inferior */
-}
+/* Fin Estilos para la sección de aventuras */
 
+/* Estilos para las tarjetas de actividades */
 .activity-card {
   border: none;
   /* Sin borde */
@@ -524,7 +527,7 @@ footer p {
 .activity-card h3.card-title {
   font-size: 24px;
   /* Tamaño del título */
-  color: var(--color-blanco);
+  color: #FFFFFF;
   /* Color del texto del título */
   background-color: rgba(0, 0, 0, 0.7);
   /* Fondo semitransparente */
@@ -533,28 +536,25 @@ footer p {
   border-radius: 0 0 8px 8px;
   /* Bordes redondeados solo en la parte inferior */
 }
-/* Fin Estilos para la sección Nuestros Servicios */
+
+/* Fin Estilos para las tarjetas de actividades */
 
 /* Estilos para el Formulario de Suscripción */
 .subscribe-section {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   padding: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
 }
 
 .subscribe-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  color:var(--color-oscuro);
+  color: #333333;
   margin-bottom: 20px;
 }
 
 .subscribe-text {
-  font-size: 1rem;
-  color: var(--color-gris);
+  font-size: 16px;
+  color: #666666;
   margin-bottom: 30px;
 }
 
@@ -572,24 +572,52 @@ footer p {
 }
 
 .btn-primary {
-  border-radius: 1px;
-  background-color: var(--color-verde);
-  border-color: var(--color-oscuro);
+  border-radius: 0;
+  background-color: #4CAF50;
+  border-color: #CCCCCC;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-amarillo);
-  border-color: var(--color-oscuro);
+  background-color: #FFA63D;
+  border-color: #666666;
 }
 
 /* Fin Estilos para la Sección de Suscripción */
+
+/* Estilos para la Sección Nosotros */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Fin Estilos para la Sección Nosotros */
+
 /* _______________________________ Fin estilos Index _______________________________*/
 
 /* _______________________________ Estilos Pagina Destino.html _______________________________ */
 
 /* Estilos para la sección de llamada a la acción con video de fondo */
 .video-content h2 {
-  font-size: 2rem;
+  font-size: 32px;
   /* Tamaño del título */
   margin-bottom: 20px;
   /* Espaciado inferior */
@@ -609,7 +637,7 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--color-blanco);
+  color: white;
   }
 
 .banner-title {
@@ -620,13 +648,13 @@ footer p {
 .banner-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--color-amarillo);
-  color: var(--color-blanco);
+  background-color: #ff9900;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
-/* Los Estilos de Card son los mismos del Index */
+/* Estilos de Card son los mismos del Index */
 /* _______________________________ Fin Estilos Pagina Destino.html _______________________________ */
 
 .jumbotron {
