@@ -26,6 +26,7 @@
   --color-amarillo: #ffa63d;
   --color-gris: #333333;
   --color-blanco: #ffffff;
+  --color-claro: #f5f5f5;
   --color-azul: #87ceeb;
   --color-marron: #8b4513;
   --color-formCTR: #2e3a48;
@@ -814,4 +815,234 @@ footer p {
 
 .social-links a:hover {
   color: #e6b800;
+}
+/* _______________________________ Estilos Pagina Contacto.html _______________________________ */
+
+/* _______________________________ Estilos Pagina Maqueta Detalle de estinos _______________________________ */
+
+/* Banner Contacto son los estilos de CTA en Index */
+
+/* Sección del detalle del paquete */
+.single-tour-section {
+  padding: 50px 0;
+}
+
+/* Contenido de la sección del detalle del paquete */
+.single-tour-inner {
+  margin-bottom: 30px;
+}
+
+/* Título principal del paquete */
+.single-tour-inner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la imagen destacada del paquete */
+.feature-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para los metadatos del paquete (duración, personas, ubicación) */
+.package-meta ul {
+  background-color: var(--color-oscuro);
+  color: var(--color-blanco);
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.package-meta li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.package-meta i {
+  margin-right: 5px;
+  color: var(--color-blanco);
+}
+
+/* Estilos para la pestaña */
+.nav-tabs {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 15px;
+}
+
+.nav-tabs .nav-link {
+  font-weight: bold;
+  color: var(--color-oscuro);
+  border: none;
+  border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--color-verde);
+  background-color: transparent;
+  border-bottom: 3px solid var(--color-verde);
+}
+
+/* Estilos para el contenido de las pestañas */
+.tab-content {
+  padding: 20px;
+  border: 1px solid var(--color-gris);
+  border-top: none;
+}
+
+.overview-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Estilos para el programa */
+.itinerary-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.itinerary-content span {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-gris);
+}
+
+.itinerary-timeline-wrap ul {
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-content {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-gris);
+}
+
+.day-count {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Valor */
+.package-price {
+  background-color: var(--color-verde);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.package-price .price {
+  color: var(--color-blanco);
+
+}
+.package-price .price span {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+
+/* Formulario de reservas */
+.reservation-form-wrap {
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h3 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-blanco);
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-verde);
+}
+
+.btn-primary {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Fin form de reservas */
+
+.widget-bg {
+  background-color: var(--color-claro);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.information-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-negro);
+  margin-bottom: 10px;
+}
+
+.information-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-negro);
+  margin-bottom: 20px;
+}
+
+.information-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--color-amarillo);
 }
