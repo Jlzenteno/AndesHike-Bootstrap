@@ -2,82 +2,213 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andes Hike - Turismo de Aventura</title>
-    <!-- Iconos BoxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="../img/Logo Hike Andes.png" type="image/png">
-    <!-- Bootstrap-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos CSS Propios-->
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andes Hike - Esqui y Snowboard</title>
+  <!-- Iconos BoxIcons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="../../img/Logo Hike Andes.png" type="image/png">
+  <!-- Bootstrap-->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos CSS Propios-->
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-
-
-<!-- Seccion Footer -->
-<footer class="bg-dark text-white py-4">
+<body>
+  <!-- Navegacion Bootstrap -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 d-none d-md-block">
-                <h5>Aventura</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Trekking</a></li>
-                    <li><a href="#">Alta Montaña</a></li>
-                    <li><a href="#">Excursiones</a></li>
-                    <li><a href="#">Kayak</a></li>
-                    <li><a href="#">Snowboard</a></li>
-                    <li><a href="#">Mountain Bike</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 d-none d-md-block">
-                <h5>Destinos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Machu Picchu</a></li>
-                    <li><a href="#">Amazonía</a></li>
-                    <li><a href="#">Torres del Paine</a></li>
-                    <li><a href="#">Salar de Uyuni</a></li>
-                    <li><a href="#">El Chaltén</a></li>
-                    <li><a href="#">Catedrales de Mármol</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 d-none d-md-block">
-                <h5>Menú</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Aventuras</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Alojamiento</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Terminos y Condiciones</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
-                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      <!-- Contenedor personalizado para el logo -->
+      <div class="navbar-logo">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/Logo Andes Hike.png" alt="Andes Hike Logo">
+        </a>
+      </div>
+      <!-- Botón para el menú offcanvas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú offcanvas -->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú de Navegación</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-        <!-- Caja Pie -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <p>&copy; 2023 Andes Hike. Todos los derechos reservados.</p>
-            </div>
-            <div class="col-md-6">
-                <ul class="list-inline text-end">
-                    <li class="list-inline-item"><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class='bx bxl-whatsapp-square'></i></a></li>
-                </ul>
-            </div>
+        <div class="offcanvas-body">
+          <!-- Enlaces de navegación -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../index.html">
+                <i class='bx bxs-home'></i> Inicio
+              </a>
+            </li>
+            <li class="nav-item dropdown"> <!-- Menu desplegable Servicios -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class='bx bx-walk'></i> Servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Trekking.html">Trekking</a></li>
+                <li><a class="dropdown-item" href="./Excursiones.html">Excursiones</a></li>
+                <li><a class="dropdown-item" href="./AltaMontana.html">Alta Montaña</a></li>
+                <li>
+                <li><a class="dropdown-item" href="./Rafting.html">Rafting</a></li>
+                <li><a class="dropdown-item" href="./Kayak.html">Kayak</a></li>
+                <li>
+                <li><a class="dropdown-item" href="./MountainBike.html">Mountain Bike</a></li>
+                <li><a class="dropdown-item" href="./Esqui-Snowboard.html">Esquí y Snowboard</a></li>
+              </ul>
+            </li> <!-- Fin Menu desplegable Servicios -->
+            <li class="nav-item dropdown"> <!-- Menu desplegable Destinos -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class='bx bx-walk'></i> Destinos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Destinos/Amazonia.html">Amazonía</a></li>
+                <li><a class="dropdown-item" href="../Destinos/TorresdelPaine.html">Torres del Paine</a></li>
+                <li><a class="dropdown-item" href="../Destinos/SalardeUyuni.html">Salar de Uyuni</a></li>
+                <li>
+                <li><a class="dropdown-item" href="../Destinos/ElChalten.html">El Chaltén</a></li>
+                <li><a class="dropdown-item" href="../Destinos/CatedralesdeMarmol.html">Catedrales de Mármol</a></li>
+                <li>
+                <li><a class="dropdown-item" href="../Destinos/MachuPicchu.html">Machu Picchu</a></li>
+                <li><a class="dropdown-item" href="../Destinos.html">Todos los Destinos</a></li>
+              </ul>
+            </li> <!-- Fin Menu desplegable Destinos -->
+            <li class="nav-item">
+              <a class="nav-link" href="../Alojamiento.html">
+                <i class='bx bxs-hotel'></i> Alojamiento
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Contacto.html">
+                <i class='bx bxs-contact'></i> Contacto
+              </a>
+            </li>
+          </ul>
+          <!-- Fin Enlaces de navegación -->
+          <!-- Enlaces de redes sociales -->
+          <div class="navbar-social">
+            <h6 class="navbar-social-title">Síguenos en redes sociales:</h6>
+            <ul class="navbar-nav social-icons">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class='bx bxl-facebook-circle'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class='bx bxl-instagram-alt'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class='bx bxl-youtube'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class='bx bxl-whatsapp-square'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Formulario de búsqueda -->
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+          <div class="navbar-contact">
+            <h6 class="navbar-contact-title">Datos de contacto:</h6>
+            <p class="navbar-contact-info">
+              <i class='bx bx-phone'></i> Teléfono: (123) 456-7890<br>
+              <i class='bx bx-envelope'></i> Correo: info@andeshike.com<br>
+              <i class='bx bx-location-plus'></i> Dirección: Monte Aconcagua, Andes Centrales.
+            </p>
+          </div>
+          <div class="navbar-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-<!-- Fin Seccion Footer -->
-<!-- Scripts-->
-<script src="../js/bootstrap.bundle.min.js"></script>
-<script src="../js/javascript.js"></script>
+  </nav>
+  <!-- Fin Navegacion Bootstrap -->
+  <!-- ________________  Contenido de la Pagina ________________ -->
+
+  <!-- ________________ Fin Contenido de la Pagina ________________ -->
+
+  <!-- Seccion Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 d-none d-md-block">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled">
+            <li><a href="./Trekking.html">Trekking</a></li>
+            <li><a href="./AltaMontana.html">Alta Montaña</a></li>
+            <li><a href="./Excursiones.html">Excursiones</a></li>
+            <li><a href="./Kayak.html">Kayak</a></li>
+            <li><a href="./Esqui-Snowboard.html">Esqui y Snowboard</a></li>
+            <li><a href="./MountainBike.html">Mountain Bike</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <h5>Destinos</h5>
+          <ul class="list-unstyled">
+            <li><a href="../../pages/Destinos/MachuPicchu.html">Machu Picchu</a></li>
+            <li><a href="../../pages/Destinos/Amazonia.html">Amazonía</a></li>
+            <li><a href="../../pages/Destinos/TorresdelPaine.html">Torres del Paine</a></li>
+            <li><a href="../../pages/Destinos/SalardeUyuni.html">Salar de Uyuni</a></li>
+            <li><a href="../../pages/Destinos/ElChalten.html">El Chaltén</a></li>
+            <li><a href="../../pages/Destinos/CatedralesdeMarmol.html">Catedrales de Mármol</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <h5>Menú</h5>
+          <ul class="list-unstyled">
+            <li><a href="../Servicios.html">Servicios</a></li>
+            <li><a href="../Destinos.html">Destinos</a></li>
+            <li><a href="../Alojamiento.html">Alojamiento</a></li>
+            <li><a href="../Contacto.html">Contacto</a></li>
+            <li><a href="../Faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="../Terminosycondiciones.html">Terminos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
+            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Caja Pie -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>&copy; 2023 Andes Hike. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-end">
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class='bx bxl-whatsapp-square'></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Seccion Footer -->
+
+  <!-- Scripts-->
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <!-- Fin Scrips -->
 </body>
 </html>
