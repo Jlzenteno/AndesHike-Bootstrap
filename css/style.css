@@ -21,14 +21,14 @@
 /* Paleta de colores */
 :root {
   --color-negro: #333333;
-  --color-oscuro: #1E2A38;
+  --color-oscuro: #1e2a38;
   --color-verde: #006400;
-  --color-amarillo: #FFA63D;
+  --color-amarillo: #ffa63d;
   --color-gris: #333333;
   --color-blanco: #ffffff;
   --color-azul: #87ceeb;
   --color-marron: #8b4513;
-  --color-formCTR: #2E3A48;
+  --color-formCTR: #2e3a48;
 }
 
 /* _______________________________FIN Estilos Generales para el proyecto web con Bootstrap _______________________________*/
@@ -53,12 +53,12 @@
 
 /* Estilos para los enlaces del menú de navegación */
 .navbar-nav .nav-link {
-  color: var(--color-blanco)
+  color: var(--color-blanco);
   /* Color de los enlaces */
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--color-amarillo)
+  color: var(--color-amarillo);
   /* Color al pasar el mouse por encima de los enlaces */
 }
 
@@ -161,7 +161,6 @@
   font-weight: bold;
   margin-bottom: 5px;
   /* Espaciado inferior */
- 
 }
 
 .navbar-nav.social-icons .nav-link {
@@ -178,15 +177,6 @@
 .navbar-nav.social-icons .nav-link:hover {
   color: var(--color-amarillo);
   /* Color al pasar el mouse por encima de los íconos */
-}
-
-/* Estilos Formulario de reservas */
-.reservation-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* Estilos para el formulario de búsqueda */
@@ -301,7 +291,6 @@ footer p {
 
 .list-inline-item a:hover {
   color: var(--color-amarillo);
-  ;
 }
 
 /* _______________________________ Fin Estilos generales para el footer _______________________________ */
@@ -365,7 +354,7 @@ footer p {
 }
 
 .adventures-section h2 {
-  font-size: 2,5rem;
+  font-size: 2, 5rem;
   /* Tamaño del título */
   color: var(--color-negro);
   /* Color del texto */
@@ -414,6 +403,7 @@ footer p {
   color: var(--color-gris);
   /* Color del texto */
 }
+
 /* FIN Estilos para la Seccion Nuestros Destinos */
 
 /* Estilos para la sección de "Call to Action" */
@@ -425,6 +415,7 @@ footer p {
   justify-content: center;
   height: 600px;
 }
+
 .video-background {
   position: absolute;
   top: 0;
@@ -434,6 +425,7 @@ footer p {
   object-fit: cover;
   z-index: -1;
 }
+
 .cta-content {
   position: relative;
   text-align: center;
@@ -441,9 +433,11 @@ footer p {
   color: var(--color-gris);
   z-index: 1;
 }
+
 .cta-button {
   margin-top: 20px;
 }
+
 /* Fin Estilos para la sección de "Call to Action" */
 
 /* Estilos para la Sección Nosotros */
@@ -474,8 +468,8 @@ footer p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Fin Estilos para la Sección Nosotros */
 
+/* Fin Estilos para la Sección Nosotros */
 
 /* Estilos para la sección Nuestros Servicios */
 .activity-types-section {
@@ -486,7 +480,7 @@ footer p {
 }
 
 .activity-types-section h2 {
-  font-size: 2,5rem;
+  font-size: 2, 5rem;
   /* Tamaño del título */
   color: var(--color-blanco);
   /* Color del texto */
@@ -533,6 +527,7 @@ footer p {
   border-radius: 0 0 8px 8px;
   /* Bordes redondeados solo en la parte inferior */
 }
+
 /* Fin Estilos para la sección Nuestros Servicios */
 
 /* Estilos para el Formulario de Suscripción */
@@ -548,7 +543,7 @@ footer p {
 .subscribe-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color:var(--color-oscuro);
+  color: var(--color-oscuro);
   margin-bottom: 20px;
 }
 
@@ -583,84 +578,240 @@ footer p {
 }
 
 /* Fin Estilos para la Sección de Suscripción */
+
 /* _______________________________ Fin estilos Index _______________________________*/
 
 /* _______________________________ Estilos Pagina Destino.html _______________________________ */
 
 /* Estilos para la sección de llamada a la acción con video de fondo */
-.video-content h2 {
-  font-size: 2rem;
-  /* Tamaño del título */
-  margin-bottom: 20px;
-  /* Espaciado inferior */
-  padding: 10px;
-}
-
-/* Estilos del banner con video */
-.banner {
-  position: relative;
-  height: 600px;
-  overflow: hidden;
-}
-
-.banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: var(--color-blanco);
-  }
-
-.banner-title {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.banner-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--color-amarillo);
-  color: var(--color-blanco);
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Los Estilos de Card son los mismos del Index */
-/* _______________________________ Fin Estilos Pagina Destino.html _______________________________ */
-
-.jumbotron {
+/* Estilos para la sección de "Call to Action" */
+.cta-destinos {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 600px;
-  padding: 0;
-  margin-bottom: 0;
 }
 
-.jumbotron img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.jumbotron .overlay {
+.video-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
+  object-fit: cover;
+  z-index: -1;
 }
 
-.jumbotron .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.cta-content {
+  position: relative;
   text-align: center;
+  padding: 100px 0;
+  color: var(--color-blanco);
   z-index: 1;
 }
 
-/* pruebas de aca para abajo */
+.cta-button {
+  margin-top: 20px;
+}
 
-  
+/* Fin Estilos para la sección de "Call to Action" */
+
+/* Estilos para el Formulario de Suscripción */
+.subscribe-destinos {
+  background-color: var(--color-oscuro);
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.subscribe-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-blanco);
+  margin-bottom: 20px;
+}
+
+.subscribe-text {
+  font-size: 1rem;
+  color: var(--color-blanco);
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  border-radius: 1px;
+  background-color: var(--color-verde);
+  border-color: var(--color-blanco);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-amarillo);
+  border-color: var(--color-blanco);
+}
+
+/* Fin Estilos para la Sección de Suscripción */
+
+/* Los Estilos de Card son los mismos del Index */
+/* _______________________________ Fin Estilos Pagina Destino.html _______________________________ */
+
+/* _______________________________ Estilos Pagina Contacto.html _______________________________ */
+
+/* Banner Contacto son los estilos de CTA en Index */
+
+/* Estilos para la sección de formulario de contacto */
+.contact-page-section {
+  padding: 50px 0;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  color: var(--color-oscuro);
+}
+
+.contact-from-wrap {
+  margin-bottom: 30px;
+}
+
+.contact-from input,
+.contact-from textarea {
+  background-color: var(--color-blanco);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-oscuro);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-from input:focus,
+.contact-from textarea:focus {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-verde);
+  color: var(--color-oscuro);
+}
+
+.contact-from .btn-primary {
+  background-color: var(--color-verde);
+  color: var(--color-oscuro);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-from .btn-primary:hover {
+  background-color: var(--color-amarillo);
+  color: var(--color-oscuro);
+}
+
+/* Estilos para la sección de detalles de contacto */
+.contact-detail-wrap {
+  background-color: var(--color-oscuro);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-detail-wrap h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--color-blanco);
+}
+
+.contact-detail-wrap p {
+  color: var(--color-blanco);
+  margin-bottom: 30px;
+}
+
+.details-list {
+  margin-top: 30px;
+}
+
+.details-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-list .icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: var(--color-verde);
+}
+
+.details-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--color-blanco);
+  text-align: left;
+}
+
+.details-content span {
+  color: var(--color-blanco);
+  text-align: left;
+}
+
+.social-links {
+  margin-top: 40px;
+}
+
+.social-links h3 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--color-blanco);
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin-right: 20px;
+}
+
+.social-links a {
+  font-size: 28px;
+  color: var(--color-verde);
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e6b800;
+}
