@@ -656,3 +656,38 @@ footer p {
 
 /* Estilos de Card son los mismos del Index */
 /* _______________________________ Fin Estilos Pagina Destino.html _______________________________ */
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
+}
+
+.jumbotron .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+/* pruebas de aca para abajo */
+
