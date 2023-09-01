@@ -15,136 +15,305 @@
 </head>
 
 <body>
-  <!-- Navegacion Bootstrap -->
-  <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <!-- Contenedor personalizado para el logo -->
-      <div class="navbar-logo">
-        <a class="navbar-brand" href="#">
-          <img src="../../img/Logo Hike Andes.png" alt="Andes Hike Logo">
-        </a>
-      </div>
-      <!-- Botón para el menú offcanvas -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Menú offcanvas -->
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú de Navegación</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+  <header>
+    <!-- Navegacion Bootstrap -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Contenedor personalizado para el logo -->
+        <div class="navbar-logo">
+          <a class="navbar-brand" href="#">
+            <img src="../../img/Logo Andes Hike.png" alt="Andes Hike Logo">
+          </a>
         </div>
-        <div class="offcanvas-body">
-          <!-- Enlaces de navegación -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">
-                <i class='bx bxs-home'></i> Inicio
-              </a>
-            </li>
-            <li class="nav-item dropdown"> <!-- Menu desplegable Servicios -->
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class='bx bx-walk'></i> Servicios
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Servicios/Trekking.html">Trekking</a></li>
-                <li><a class="dropdown-item" href="../Servicios/Excursiones.html">Excursiones</a></li>
-                <li><a class="dropdown-item" href="../Servicios/AltaMontana.html">Alta Montaña</a></li>
-                <li>
-                <li><a class="dropdown-item" href="../Servicios/Rafting.html">Rafting</a></li>
-                <li><a class="dropdown-item" href="../Servicios/Kayak.html">Kayak</a></li>
-                <li>
-                <li><a class="dropdown-item" href="../Servicios/MountainBike.html">Mountain Bike</a></li>
-                <li><a class="dropdown-item" href="../Servicios/Esqui-Snowboard.html">Esquí y Snowboard</a></li>
-              </ul>
-            </li> <!-- Fin Menu desplegable Servicios -->
-            <li class="nav-item dropdown"> <!-- Menu desplegable Destinos -->
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class='bx bx-walk'></i> Destinos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Destinos/Amazonia.html">Amazonía</a></li>
-                <li><a class="dropdown-item" href="../Destinos/TorresdelPaine.html">Torres del Paine</a></li>
-                <li><a class="dropdown-item" href="../Destinos/SalardeUyuni.html">Salar de Uyuni</a></li>
-                <li>
-                <li><a class="dropdown-item" href="../Destinos/ElChalten.html">El Chaltén</a></li>
-                <li><a class="dropdown-item" href="../Destinos/CatedralesdeMarmol.html">Catedrales de Mármol</a></li>
-                <li>
-                <li><a class="dropdown-item" href="../Destinos/MachuPicchu.html">Machu Picchu</a></li>
-                <li><a class="dropdown-item" href="../Destinos.html">Todos los Destinos</a></li>
-              </ul>
-            </li> <!-- Fin Menu desplegable Destinos -->
-            <li class="nav-item">
-              <a class="nav-link" href="../Alojamiento.html">
-                <i class='bx bxs-hotel'></i> Alojamiento
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Contacto.html">
-                <i class='bx bxs-contact'></i> Contacto
-              </a>
-            </li>
-          </ul>
-          <!-- Fin Enlaces de navegación -->
-          <!-- Enlaces de redes sociales -->
-          <div class="navbar-social">
-            <h6 class="navbar-social-title">Síguenos en redes sociales:</h6>
-            <ul class="navbar-nav social-icons">
+        <!-- Botón para el menú offcanvas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú offcanvas -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú de Navegación</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Enlaces de navegación -->
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class='bx bxl-facebook-circle'></i>
+                <a class="nav-link active" aria-current="page" href="../../index.html">
+                  <i class='bx bxs-home'></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item dropdown"> <!-- Menu desplegable Servicios -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class='bx bx-walk'></i> Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Servicios/Trekking.html">Trekking</a></li>
+                  <li><a class="dropdown-item" href="../Servicios/Excursiones.html">Excursiones</a></li>
+                  <li><a class="dropdown-item" href="../Servicios/AltaMontana.html">Alta Montaña</a></li>
+                  <li>
+                  <li><a class="dropdown-item" href="../Servicios/Rafting.html">Rafting</a></li>
+                  <li><a class="dropdown-item" href="../Servicios/Kayak.html">Kayak</a></li>
+                  <li>
+                  <li><a class="dropdown-item" href="../Servicios/MountainBike.html">Mountain Bike</a></li>
+                  <li><a class="dropdown-item" href="../Servicios/Esqui-Snowboard.html">Esquí y Snowboard</a></li>
+                </ul>
+              </li> <!-- Fin Menu desplegable Servicios -->
+              <li class="nav-item dropdown"> <!-- Menu desplegable Destinos -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class='bx bx-walk'></i> Destinos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Destinos/Amazonia.html">Amazonía</a></li>
+                  <li><a class="dropdown-item" href="../Destinos/TorresdelPaine.html">Torres del Paine</a></li>
+                  <li><a class="dropdown-item" href="../Destinos/SalardeUyuni.html">Salar de Uyuni</a></li>
+                  <li>
+                  <li><a class="dropdown-item" href="../Destinos/ElChalten.html">El Chaltén</a></li>
+                  <li><a class="dropdown-item" href="../Destinos/CatedralesdeMarmol.html">Catedrales de Mármol</a></li>
+                  <li>
+                  <li><a class="dropdown-item" href="../Destinos/MachuPicchu.html">Machu Picchu</a></li>
+                  <li><a class="dropdown-item" href="../Destinos/">Todos los Destinos</a></li>
+                </ul>
+              </li> <!-- Fin Menu desplegable Destinos -->
+              <li class="nav-item">
+                <a class="nav-link" href="../Alojamiento.html">
+                  <i class='bx bxs-hotel'></i> Alojamiento
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class='bx bxl-instagram-alt'></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class='bx bxl-youtube'></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class='bx bxl-whatsapp-square'></i>
+                <a class="nav-link" href="../Contacto.html">
+                  <i class='bx bxs-contact'></i> Contacto
                 </a>
               </li>
             </ul>
-          </div>
-          <!-- Formulario de búsqueda -->
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-success" type="submit">Buscar</button>
-          </form>
-          <div class="navbar-contact">
-            <h6 class="navbar-contact-title">Datos de contacto:</h6>
-            <p class="navbar-contact-info">
-              <i class='bx bx-phone'></i> Teléfono: (123) 456-7890<br>
-              <i class='bx bx-envelope'></i> Correo: info@andeshike.com<br>
-              <i class='bx bx-location-plus'></i> Dirección: Monte Aconcagua, Andes Centrales.
-            </p>
-          </div>
-          <div class="navbar-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
-              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Fin Enlaces de navegación -->
+            <!-- Enlaces de redes sociales -->
+            <div class="navbar-social">
+              <h6 class="navbar-social-title">Síguenos en redes sociales:</h6>
+              <ul class="navbar-nav social-icons">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bxl-instagram-alt'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bxl-youtube'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bxl-whatsapp-square'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+            <div class="navbar-contact">
+              <h6 class="navbar-contact-title">Datos de contacto:</h6>
+              <p class="navbar-contact-info">
+                <i class='bx bx-phone'></i> Teléfono: (123) 456-7890<br>
+                <i class='bx bx-envelope'></i> Correo: info@andeshike.com<br>
+                <i class='bx bx-location-plus'></i> Dirección: Monte Aconcagua, Andes Centrales.
+              </p>
+            </div>
+            <div class="navbar-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439857.063989177!2d-73.78052109849821!3d-32.653178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9687925500c38047%3A0x5234c15eaaa14869!2sAconcagua!5e0!3m2!1ses-419!2scl!4v1693304418572!5m2!1ses-419!2scl"
+                width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- Fin Navegacion Bootstrap -->
-  <!-- ________________  Contenido de la Pagina ________________ -->
+    </nav>
+    <!-- Fin Navegacion Bootstrap -->
+  </header>
+  <main>
+    <!--  Contenido de la Pagina -->
+    <!-- Seccion de Banner  -->
+    <section class="banner-dest">
+      <video class="video-background" autoplay muted loop>
+        <source src="../../media/salardeuyuni.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="banner-cont">
+              <h2>Salar de Uyuni en Bolivia</h2>
+              <p>Adéntrate en el mayor espejo natural del mundo. El Salar de Uyuni, en Bolivia, te llevará a un mundo de maravillas blancas y reflejos infinitos. Camina sobre un mar de sal, captura las fotos más asombrosas y sumérgete en la inmensidad de este espectáculo natural único.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contenedor Detalle Destino-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+             <!-- Seccion Detalle Destino-->
+          <section class="destino-section">
+            <div class="destino-section-cont">
+              <h2>Salar de Uyuni: Espejo de Sal en el Cielo de Bolivia</h2>
+              <figure class="destino-image">
+                <img src="../../img/Destinos/salardeuyuni.jpg" alt="" class="img-fluid">
+                <div class="package-meta text-center">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class='bx bx-time'></i>
+                      6 dias / 5 noches
+                    </li>
+                    <li>
+                      <i class='bx bxs-user-plus'></i>
+                      Max Personas: 10
+                    </li>
+                    <li>
+                      <i class='bx bx-map-alt'></i>
+                      Salar de Uyuni, Peru
+                    </li>
+                  </ul>
+                </div>
+              </figure>
+              <!-- Contenedor de descripciones-->
+              <div class="tab-container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab"
+                      aria-controls="overview" aria-selected="true">Descripción</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="program-tab" data-toggle="tab" href="#program" role="tab"
+                      aria-controls="program" aria-selected="false">Programa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="itinerary-tab" data-toggle="tab" href="#itinerary" role="tab"
+                      aria-controls="itinerary" aria-selected="false">Itinerario</a>
+                  </li>
+                  <!-- Agrega más pestañas desde acá -->
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <!-- Contenido de la pestaña "Descripción" -->
+                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <div class="overview-content">
+                      <p>El Salar de Uyuni, en Bolivia, es un paisaje de ensueño enclavado en el altiplano andino. Este vasto desierto de sal, el más grande del mundo, se extiende sobre 10,000 kilómetros cuadrados. Durante la estación seca, el salar se convierte en un espejo perfecto que refleja el cielo, creando una ilusión de infinitud.
 
-  <!-- ________________ Fin Contenido de la Pagina ________________ -->
+                        Caminar sobre este mar de sal es como pisar otro planeta. El silencio absoluto y la inmensidad del lugar te sumergen en un mundo surrealista. Durante la estación de lluvias, el salar se cubre ligeramente de agua, transformándose en un espejo de agua que refleja el cielo y las nubes, creando una ilusión de que estás caminando sobre el cielo mismo.</p>
+                    </div>
+                  </div>
+                  <!-- Contenido de la pestaña "Programa" -->
+                  <div class="tab-pane" id="program" role="tabpanel" aria-labelledby="program-tab">
+                    <div class="program-content">
+                      <h3>Programa <span>(6 días)</span></h3>
+                      <h5>Incluye:</h5>
+                      <ul>
+                        <li>1. Alojamiento: Estadía en hoteles o alojamientos locales en Uyuni o en la región del salar.</li>
+                        <li>2. Comidas: Algunos paquetes incluyen desayuno, almuerzo y cena, dependiendo de la duración del viaje..</li>
+                        <li>3. Excursiones y Guiado: Excursiones guiadas por el Salar de Uyuni y sus atracciones, como la Isla Incahuasi.</li>
+                        <li>4. Guías Locales: Expertos guías locales que te contarán la historia y la geología de la zona.
+                        </li>
+                        <li>5. Equipamiento: En algunos casos, se proporciona equipo especializado, como gafas de sol y botellas de oxígeno debido a la altitud.</li>
+                        <li>6. Tiempo Libre: Momentos para relajarse y disfrutar de la serenidad del entorno.
+                        </li>
+                      </ul>
+                      <h6>¡No esperes más para vivir la experiencia única del Salar de Uyuni en Bolivia! Este rincón del mundo te ofrece un paisaje surrealista que parece sacado de un sueño. Camina sobre el mayor espejo de sal natural del planeta, maravíllate con sus ilusiones ópticas y disfruta de los amaneceres y atardeceres más mágicos. Reserva tu viaje hoy y prepárate para una aventura inolvidable en el corazón de los Andes. ¡El Salar de Uyuni te espera para crear recuerdos que durarán toda la vida!</h6>
+                      <!-- Agrega más elementos de programa acá -->
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="itinerary" role="tabpanel" aria-labelledby="itinerary-tab">
+                    <div class="itinerary-content">
+                    </div>
+                    <div class="itinerary-timeline-wrap">
+                      <ul>
+                        <li>
+                          <div class="timeline-content">
+                            <div class="day-count">Día <span>1</span></div>
+                            <h4>Llegada a la Amazonia</h4>
+                            <ul>
+                            <li>- Llegada al aeropuerto de la ciudad.</li>
+                            <li>- Traslado al Hotel.</li>
+                            <li>- Cena de bienvenida y reunión informativa</li>
+                            </ul>
+                          <div class="day-count">Día <span>2</span></div>
+                          <h4>Exploración de la Selva</h4>
+                          <ul>
+                            <li>- Desayuno temprano.</li>
+                            <li>- Excursión de observación de aves y plantas.</li>
+                            <li>- Almuerzo en Restaurante.</li>
+                            <li>- Caminata por la tarde para explorar la biodiversidad.</li>
+                            <li>- Cena y charla en Restaurante.</li>
+                          </ul>
+                        <div class="day-count">Día <span>3</span></div>
+                        <h4>Muchas actividades</h4>
+                        <p> Si sigo poniendo itinerario no termino mas la entrega
+                        </p>
 
+                        
+                    </div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+      <!-- Seccion Valores y reservas -->
+      <div class="col-lg-4">
+        <section class="destino-reserva">
+          <div class="package-price">
+            <h5 class="price">
+              <span>$649</span> / por persona
+            </h5>
+          </div>
+          <!-- Formulario de reservas -->
+          <div class="reservation-form-wrap">
+            <h3>Hacer una reserva</h3>
+            <form id="reservation-form" class="reservation-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="Nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="date">fecha del viaje</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="guests">Numero de pasajeros</label>
+                <input type="number" class="form-control" id="guests" name="guests" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <!-- Widget de Contacto-->
+          <div class="widget-bg information-content text-center">
+            <h5>CONSEJOS DE VIAJE</h5>
+            <h3>¿Necesitas consejos para tu proximo viaje?</h3>
+            <p>Descubre información útil y consejos relacionados con tus viajes. Nuestra misión es brindarte la
+              mejor
+              experiencia de viaje.</p>
+            <a href="../Contacto.html" class="button-primary">¡CONTACTANOS AHORA!</a>
+          </div>
+      </div>
+    <!-- Fin Contenido de la Pagina -->
+  </main>
   <!-- Seccion Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
@@ -209,6 +378,11 @@
   <!-- Scripts-->
   <script src="../../js/bootstrap.bundle.min.js"></script>
   <script src="../../js/javascript.js"></script>
+  <!-- Scrips Especiales -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Fin Scrips -->
 </body>
+
 </html>

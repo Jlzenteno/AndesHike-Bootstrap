@@ -8,7 +8,6 @@
   list-style: none;
 }
 
-/* ____________ Estilos Generales para el proyecto web con Bootstrap ____________ */
 /* fuente de google */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
 
@@ -32,12 +31,22 @@
   --color-formCTR: #2e3a48;
 }
 
-/* _______________________________FIN Estilos Generales para el proyecto web con Bootstrap _______________________________*/
-
 /* _______________________________ Estilos para el navegador principal _______________________________ */
 .navbar {
   background-color: var(--color-oscuro);
   /* Color de fondo del nav */
+}
+/* Estilos Botones */
+
+.btn-primary {
+  border-radius: 1px;
+  background-color: var(--color-verde);
+  border-color: var(--color-blanco);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-amarillo);
+  border-color: var(--color-blanco);
 }
 
 /* Estilos para el contenedor personalizado del logo */
@@ -438,7 +447,6 @@ footer p {
 .cta-button {
   margin-top: 20px;
 }
-
 /* Fin Estilos para la sección de "Call to Action" */
 
 /* Estilos para la Sección Nosotros */
@@ -469,7 +477,6 @@ footer p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /* Fin Estilos para la Sección Nosotros */
 
 /* Estilos para la sección Nuestros Servicios */
@@ -528,7 +535,6 @@ footer p {
   border-radius: 0 0 8px 8px;
   /* Bordes redondeados solo en la parte inferior */
 }
-
 /* Fin Estilos para la sección Nuestros Servicios */
 
 /* Estilos para el Formulario de Suscripción */
@@ -567,16 +573,6 @@ footer p {
   margin-bottom: 20px;
 }
 
-.btn-primary {
-  border-radius: 1px;
-  background-color: var(--color-verde);
-  border-color: var(--color-oscuro);
-}
-
-.btn-primary:hover {
-  background-color: var(--color-amarillo);
-  border-color: var(--color-oscuro);
-}
 
 /* Fin Estilos para la Sección de Suscripción */
 
@@ -585,7 +581,6 @@ footer p {
 /* _______________________________ Estilos Pagina Destino.html _______________________________ */
 
 /* Estilos para la sección de llamada a la acción con video de fondo */
-/* Estilos para la sección de "Call to Action" */
 .cta-destinos {
   position: relative;
   overflow: hidden;
@@ -595,7 +590,7 @@ footer p {
   height: 600px;
 }
 
-.video-background {
+.video-background-dest {
   position: absolute;
   top: 0;
   left: 0;
@@ -605,7 +600,7 @@ footer p {
   z-index: -1;
 }
 
-.cta-content {
+.cta-content-dest {
   position: relative;
   text-align: center;
   padding: 100px 0;
@@ -613,10 +608,9 @@ footer p {
   z-index: 1;
 }
 
-.cta-button {
+.cta-button-dest {
   margin-top: 20px;
 }
-
 /* Fin Estilos para la sección de "Call to Action" */
 
 /* Estilos para el Formulario de Suscripción */
@@ -632,13 +626,13 @@ footer p {
 .subscribe-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-blanco);
+  color: var(--color-oscuro);
   margin-bottom: 20px;
 }
 
 .subscribe-text {
   font-size: 1rem;
-  color: var(--color-blanco);
+  color: var(--color-oscuro);
   margin-bottom: 30px;
 }
 
@@ -653,6 +647,7 @@ footer p {
   max-width: 400px;
   display: flex;
   margin-bottom: 20px;
+  color: var(--color-azul);
 }
 
 .btn-primary {
@@ -665,7 +660,6 @@ footer p {
   background-color: var(--color-amarillo);
   border-color: var(--color-blanco);
 }
-
 /* Fin Estilos para la Sección de Suscripción */
 
 /* Los Estilos de Card son los mismos del Index */
@@ -816,30 +810,60 @@ footer p {
 .social-links a:hover {
   color: #e6b800;
 }
+
 /* _______________________________ Estilos Pagina Contacto.html _______________________________ */
 
 /* _______________________________ Estilos Pagina Maqueta Detalle de estinos _______________________________ */
 
-/* Banner Contacto son los estilos de CTA en Index */
+/* Estilos para la sección banner con video de fondo */
+.banner-dest {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.video-background-dest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-cont {
+  position: relative;
+  text-align: center;
+  padding: 20px; 
+  color: var(--color-blanco);
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo con transparencia */
+  border-radius: 10px; /* Agregar esquinas redondeadas */
+  z-index: 1;
+}
+/* Fin Estilos para la sección de banner */
 
 /* Sección del detalle del paquete */
-.single-tour-section {
+.destino-section {
   padding: 50px 0;
 }
 
 /* Contenido de la sección del detalle del paquete */
-.single-tour-inner {
+.destino-section {
   margin-bottom: 30px;
 }
 
 /* Título principal del paquete */
-.single-tour-inner h2 {
+.destino-section-cont h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
 /* Estilos para la imagen destacada del paquete */
-.feature-image img {
+.destino-image img {
   width: 100%;
   height: auto;
 }
@@ -945,17 +969,19 @@ footer p {
   padding: 20px;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
+
 .package-price .price {
   color: var(--color-blanco);
 
 }
+
 .package-price .price span {
   font-size: 30px;
   font-weight: 900;
   line-height: 1.1;
 }
-
 
 /* Formulario de reservas */
 .reservation-form-wrap {
@@ -999,6 +1025,7 @@ footer p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 /* Fin form de reservas */
 
 .widget-bg {
@@ -1046,3 +1073,8 @@ footer p {
 .button-primary:hover {
   background-color: var(--color-amarillo);
 }
+
+/* ___________Fin Estilos Maqueta Destinos __________ */
+
+/* Estilos Amazonia.html */
+
