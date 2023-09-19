@@ -1,0 +1,33 @@
+.footer {
+    margin: auto;
+    padding: 50px 0;
+    color: var(--color-blanco);
+}
+
+/* Estilos para los enlaces del menú */
+footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-amarillo);
+}
+
+/* Estilos para el copy */
+footer p {
+    margin-bottom: 0;
+}
+
+/* Estilos para los íconos de redes sociales */
+.list-inline-item a {
+    color: var(--color-blanco);
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.list-inline-item a:hover {
+    color: var(--color-amarillo);
+}

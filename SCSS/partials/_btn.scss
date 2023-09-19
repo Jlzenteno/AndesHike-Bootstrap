@@ -1,0 +1,9 @@
+.btn-primary {
+    border-radius: 1px;
+    background-color: var(--color-verde);
+    border-color: var(--color-blanco);
+    &:hover{
+        background-color: var(--color-amarillo);
+        border-color: var(--color-blanco);
+    }
+}

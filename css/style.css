@@ -1,6 +1,9 @@
 @charset "UTF-8";
-/* Resetear estilos por defecto */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "Vintage Handmade";
+  src: url(/fonts/Vintage\ Handmade.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +13,6 @@
   list-style: none;
 }
 
-/* fuente de google */
-/* Fuentes descargadas en el Sitio */
-@font-face {
-  font-family: "Vintage Handmade";
-  src: url(/fonts/Vintage\ Handmade.ttf);
-}
-/* Paleta de colores */
 :root {
   --color-negro: #333333;
   --color-oscuro: #1e2a38;
@@ -30,13 +26,11 @@
   --color-formCTR: #2e3a48;
 }
 
-/* Estilos Botones */
 .btn-primary {
   border-radius: 1px;
   background-color: var(--color-verde);
   border-color: var(--color-blanco);
 }
-
 .btn-primary:hover {
   background-color: var(--color-amarillo);
   border-color: var(--color-blanco);
@@ -234,8 +228,6 @@
   height: 200px;
 }
 
-/* Estilos generales para el footer _______________________________*/
-/* NOTA: Por algun motivo no logre anidar el footer :( */
 .footer {
   margin: auto;
   padding: 50px 0;
@@ -270,7 +262,7 @@ footer p {
   color: var(--color-amarillo);
 }
 
-/* _______________________________ Estilos Index _______________________________*/
+/* Estilos Index */
 /* Estilos para el carrusel de Bootstrap */
 .carousel {
   margin-top: 100px;
@@ -653,7 +645,7 @@ footer p {
   color: #e6b800;
 }
 
-/*  Estilos Detalle de estinos */
+/*  Estilos Detalle de destinos */
 /* Estilos para la sección banner con video de fondo */
 .banner-dest {
   position: relative;
