@@ -68,7 +68,7 @@
   /* Color al pasar el mouse por encima de los enlaces */
 }
 .navbar .form-control {
-  background-color: var(--color-gris);
+  background-color: var(--color-blanco);
   /* Color de fondo del formulario */
   color: var(--color-blanco);
   /* Color del texto del formulario */
@@ -809,7 +809,7 @@ footer p {
 .destino-reserva .reservation-form-wrap .form-control {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--color-blanco);
+  border: 1px solid var(--color-negro);
   border-radius: 5px;
   transition: border-color 0.3s ease;
 }
