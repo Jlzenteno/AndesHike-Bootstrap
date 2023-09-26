@@ -1,18 +1,18 @@
 .footer {
     margin: auto;
     padding: 50px 0;
-    color: var(--color-blanco);
+    color: $color-blanco;
 }
 
 /* Estilos para los enlaces del menú */
 footer a {
-    color: var(--color-blanco);
+    color: $color-blanco;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: var(--color-amarillo);
+    color: $color-amarillo;
 }
 
 /* Estilos para el copy */
@@ -22,12 +22,14 @@ footer p {
 
 /* Estilos para los íconos de redes sociales */
 .list-inline-item a {
-    color: var(--color-blanco);
+    color: $color-blanco;
     font-size: 2rem;
     margin-right: 1rem;
     transition: color 0.3s;
+    
+    &:hover {
+        color: $color-amarillo;
+    }
 }
 
-.list-inline-item a:hover {
-    color: var(--color-amarillo);
-}
+

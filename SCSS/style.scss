@@ -38,7 +38,7 @@
     }
 
     .carousel-caption h5 {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del título */
         font-size: 24px;
         /* Tamaño del título */
@@ -47,7 +47,7 @@
     }
 
     .carousel-caption p {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto */
         font-size: 16px;
         /* Tamaño del texto */
@@ -56,7 +56,7 @@
 
 /* Estilos para la Seccion Nuestros Destinos */
 .adventures-section {
-    background-color: var(--color-blanco);
+    background-color: $color-blanco;
     /* Color de fondo de la sección */
     padding: 100px 0;
     /* Espaciado vertical */
@@ -65,7 +65,7 @@
     .adventures-section h2 {
         font-size: 2, 5rem;
         /* Tamaño del título */
-        color: var(--color-negro);
+        color: $color-negro;
         /* Color del texto */
         margin-bottom: 30px;
         /* Espaciado inferior */
@@ -100,7 +100,7 @@
     .adventure-card h2.card-title {
         font-size: 24px;
         /* Tamaño del título */
-        color: var(--color-oscuro);
+        color: $color-oscuro;
         /* Color del texto del título */
         margin-bottom: 10px;
         /* Espaciado inferior */
@@ -109,7 +109,7 @@
     .adventure-card p.card-text {
         font-size: 16px;
         /* Tamaño del texto */
-        color: var(--color-gris);
+        color: $color-gris;
         /* Color del texto */
     }
 }
@@ -137,8 +137,12 @@
     .cta-content {
         position: relative;
         text-align: center;
-        padding: 100px 0;
-        color: var(--color-gris);
+        padding: 20px;
+        color: $color-blanco;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Color de fondo con transparencia */
+        border-radius: 10px;
+        /* Agregar esquinas redondeadas */
         z-index: 1;
     }
 
@@ -149,7 +153,7 @@
 
 /* Estilos para la Sección Nosotros */
 .about-section {
-    background-color: var(--color-blanco);
+    background-color: $color-blanco;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,13 +163,13 @@
     .about-title {
         font-size: 2rem;
         font-weight: bold;
-        color: var(--color-negro);
+        color: $color-negro;
         margin-bottom: 30px;
     }
 
     .about-text {
         font-size: 1rem;
-        color: #666666;
+        color: $color-gris;
         margin-bottom: 50px;
     }
 
@@ -179,65 +183,46 @@
 
 /* Estilos para la sección Nuestros Servicios */
 .activity-types-section {
-    background-color: var(--color-oscuro);
-    /* Color de fondo de la sección */
+    background-color: $color-oscuro;
     padding: 100px 0;
-    /* Espaciado vertical */
 
-
-    .activity-types-section h2 {
-        font-size: 2, 5rem;
-        /* Tamaño del título */
-        color: var(--color-blanco);
-        /* Color del texto */
+    h2 {
+        font-size: 2.5rem;
+        color: $color-blanco;
         margin-bottom: 30px;
-        /* Espaciado inferior */
     }
 
     .activity-card {
         border: none;
-        /* Sin borde */
         border-radius: 8px;
-        /* Bordes redondeados */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Sombra */
         transition: transform 0.3s;
-        /* Transición de transformación */
         background-size: cover;
-        /* Ajustar la imagen de fondo para cubrir todo el contenedor */
         background-position: center;
-        /* Centrar la imagen de fondo */
         height: 300px;
-        /* Altura fija para todas las tarjetas */
-    }
+        position: relative;
 
-    .activity-card:hover {
-        transform: translateY(-5px);
-        /* Levantar la tarjeta al pasar el mouse por encima */
-    }
+        &:hover {
+            transform: translateY(-5px);
+        }
 
-    .activity-card .card-body {
-        padding: 20px;
-        /* Espaciado interno */
-    }
+        .card-body {
+            padding: 20px;
+        }
 
-    .activity-card h3.card-title {
-        font-size: 24px;
-        /* Tamaño del título */
-        color: var(--color-blanco);
-        /* Color del texto del título */
-        background-color: rgba(0, 0, 0, 0.7);
-        /* Fondo semitransparente */
-        padding: 10px 0;
-        /* Espaciado interno del título */
-        border-radius: 0 0 8px 8px;
-        /* Bordes redondeados solo en la parte inferior */
+        h3.card-title {
+            font-size: 24px;
+            color: $color-blanco;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            border-radius: 0 0 8px 8px;
+        }
     }
 }
 
 /* Estilos para el Formulario de Suscripción */
 .subscribe-section {
-    background-color: var(--color-blanco);
+    background-color: $color-blanco;
     padding: 50px 0;
     display: flex;
     align-items: center;
@@ -248,13 +233,13 @@
     .subscribe-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: var(--color-oscuro);
+        color: $color-oscuro;
         margin-bottom: 20px;
     }
 
     .subscribe-text {
         font-size: 1rem;
-        color: var(--color-gris);
+        color: $color-gris;
         margin-bottom: 30px;
     }
 
@@ -297,7 +282,7 @@
         position: relative;
         text-align: center;
         padding: 100px 0;
-        color: var(--color-blanco);
+        color: $color-blanco;
         z-index: 1;
     }
 
@@ -322,7 +307,7 @@
     }
 
     .section-heading p {
-        color: var(--color-oscuro);
+        color: $color-oscuro;
     }
 
     .contact-from-wrap {
@@ -331,24 +316,24 @@
 
     .contact-from input,
     .contact-from textarea {
-        background-color: var(--color-blanco);
+        background-color: $color-blanco;
         width: 100%;
         padding: 10px;
-        border: 1px solid var(--color-oscuro);
+        border: 1px solid $color-oscuro;
         border-radius: 5px;
         margin-bottom: 15px;
     }
 
     .contact-from input:focus,
     .contact-from textarea:focus {
-        background-color: var(--color-blanco);
-        border: 2px solid var(--color-verde);
-        color: var(--color-oscuro);
+        background-color: $color-blanco;
+        border: 2px solid $color-verde;
+        color: $color-oscuro;
     }
 
     .contact-from .btn-primary {
-        background-color: var(--color-verde);
-        color: var(--color-oscuro);
+        background-color: $color-verde;
+        color: $color-oscuro;
         border: none;
         border-radius: 30px;
         padding: 15px 30px;
@@ -361,19 +346,19 @@
     }
 
     .contact-from .btn-primary:hover {
-        background-color: var(--color-amarillo);
-        color: var(--color-oscuro);
+        background-color: $color-amarillo;
+        color: $color-oscuro;
     }
 }
 
 /* Estilos para la sección de detalles de contacto */
 .contact-detail-wrap {
-    background-color: var(--color-oscuro);
+    background-color: $color-oscuro;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: var(--color-blanco);
+    color: $color-blanco;
 
     .contact-detail-wrap h3 {
         margin-bottom: 20px;
@@ -402,18 +387,18 @@
     .details-list .icon {
         font-size: 24px;
         margin-right: 15px;
-        color: var(--color-verde);
+        color: $color-verde;
     }
 
     .details-content h4 {
         font-size: 20px;
         margin-bottom: 10px;
-        color: var(--color-blanco);
+        color: $color-blanco;
         text-align: left;
     }
 
     .details-content span {
-        color: var(--color-blanco);
+        color: $color-blanco;
         text-align: left;
     }
 
@@ -424,7 +409,7 @@
     .social-links h3 {
         font-size: 1rem;
         margin-bottom: 20px;
-        color: var(--color-blanco);
+        color: $color-blanco;
     }
 
     .social-links ul {
@@ -440,12 +425,12 @@
 
     .social-links a {
         font-size: 28px;
-        color: var(--color-verde);
+        color: $color-verde;
         transition: color 0.3s ease;
     }
 
     .social-links a:hover {
-        color: #e6b800;
+        color: $color-amarillo;
     }
 }
 
@@ -475,7 +460,7 @@
         position: relative;
         text-align: center;
         padding: 20px;
-        color: var(--color-blanco);
+        color: $color-blanco;
         background-color: rgba(0, 0, 0, 0.6);
         /* Color de fondo con transparencia */
         border-radius: 10px;
@@ -503,8 +488,8 @@
 
     /* Estilos para los metadatos del paquete (duración, personas, ubicación) */
     .package-meta ul {
-        background-color: var(--color-oscuro);
-        color: var(--color-blanco);
+        background-color: $color-oscuro;
+        color: $color-blanco;
         list-style: none;
         display: flex;
         justify-content: space-around;
@@ -518,7 +503,7 @@
 
     .package-meta i {
         margin-right: 5px;
-        color: var(--color-blanco);
+        color: $color-blanco;
     }
 
     /* Estilos para la pestaña */
@@ -533,21 +518,21 @@
 
     .nav-tabs .nav-link {
         font-weight: bold;
-        color: var(--color-oscuro);
+        color: $color-oscuro;
         border: none;
         border-radius: 0;
     }
 
     .nav-tabs .nav-link.active {
-        color: var(--color-verde);
+        color: $color-verde;
         background-color: transparent;
-        border-bottom: 3px solid var(--color-verde);
+        border-bottom: 3px solid $color-verde;
     }
 
     /* Estilos para el contenido de las pestañas */
     .tab-content {
         padding: 20px;
-        border: 1px solid var(--color-gris);
+        border: 1px solid $color-gris;
         border-top: none;
 
 
@@ -576,7 +561,7 @@
 
         .timeline-content {
             padding: 20px 0;
-            border-bottom: 1px solid var(--color-gris);
+            border-bottom: 1px solid $color-gris;
         }
 
         .day-count {
@@ -602,8 +587,8 @@
 
     /* Valor */
     .package-price {
-        background-color: var(--color-verde);
-        color: var(--color-blanco);
+        background-color: $color-verde;
+        color: $color-blanco;
         padding: 20px;
         text-align: center;
         margin-bottom: 50px;
@@ -618,7 +603,7 @@
 
     /* Formulario de reservas */
     .reservation-form-wrap {
-        background-color: var(--color-blanco);
+        background-color: $color-blanco;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -640,29 +625,22 @@
         .form-control {
             width: 100%;
             padding: 10px;
-            border: 1px solid var(--color-negro);
+            border: 1px solid $color-negro;
             border-radius: 5px;
             transition: border-color 0.3s ease;
         }
 
         .form-control:focus {
-            border-color: var(--color-verde);
+            border-color: $color-verde;
         }
 
-        .btn-primary {
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+
     }
 
     /* Fin form de reservas */
 
     .widget-bg {
-        background-color: var(--color-claro);
+        background-color: $color-claro;
         padding: 30px;
         border-radius: 10px;
         margin-bottom: 30px;
@@ -672,14 +650,14 @@
     .information-content h5 {
         font-size: 18px;
         font-weight: 600;
-        color: var(--color-negro);
+        color: $color-negro;
         margin-bottom: 10px;
     }
 
     .information-content h3 {
         font-size: 28px;
         font-weight: 700;
-        color: var(--color-negro);
+        color: $color-negro;
         margin-bottom: 20px;
     }
 
@@ -693,8 +671,8 @@
     .button-primary {
         display: inline-block;
         padding: 10px 20px;
-        background-color: var(--color-verde);
-        color: var(--color-blanco);
+        background-color: $color-verde;
+        color: $color-blanco;
         font-size: 16px;
         font-weight: 600;
         border: none;
@@ -704,6 +682,8 @@
     }
 
     .button-primary:hover {
-        background-color: var(--color-amarillo);
+        background-color: v$color-amarillo;
     }
 }
+
+/* Servicios*/ 

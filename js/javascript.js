@@ -41,3 +41,16 @@
     });
   });
 </script>
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardLinks = document.querySelectorAll(".card-link");
+
+  cardLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const href = this.getAttribute("href");
+      window.location.href = href;
+    });
+  });
+});

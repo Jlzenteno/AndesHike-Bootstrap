@@ -1,9 +1,10 @@
 .btn-primary {
     border-radius: 1px;
-    background-color: var(--color-verde);
-    border-color: var(--color-blanco);
-    &:hover{
-        background-color: var(--color-amarillo);
-        border-color: var(--color-blanco);
+    background-color: $color-verde;
+    border-color: $color-blanco;
+    color: $color-blanco; /* Añadido para cambiar el color del texto a blanco */
+    &:hover {
+        background-color: $color-amarillo;
+        border-color: $color-blanco;
     }
 }

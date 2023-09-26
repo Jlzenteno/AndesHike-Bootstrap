@@ -13,27 +13,15 @@
   list-style: none;
 }
 
-:root {
-  --color-negro: #333333;
-  --color-oscuro: #1e2a38;
-  --color-verde: #006400;
-  --color-amarillo: #ffa63d;
-  --color-gris: #333333;
-  --color-blanco: #ffffff;
-  --color-claro: #f5f5f5;
-  --color-azul: #87ceeb;
-  --color-marron: #8b4513;
-  --color-formCTR: #2e3a48;
-}
-
 .btn-primary {
   border-radius: 1px;
-  background-color: var(--color-verde);
-  border-color: var(--color-blanco);
+  background-color: #006400;
+  border-color: #ffffff;
+  color: #ffffff; /* Añadido para cambiar el color del texto a blanco */
 }
 .btn-primary:hover {
-  background-color: var(--color-amarillo);
-  border-color: var(--color-blanco);
+  background-color: #ffa63d;
+  border-color: #ffffff;
 }
 
 .navbar {
@@ -60,37 +48,37 @@
   /* Tamaño máximo del logo */
 }
 .navbar .navbar-nav .nav-link {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color de los enlaces */
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: var(--color-amarillo);
+  color: #ffa63d;
   /* Color al pasar el mouse por encima de los enlaces */
 }
 .navbar .form-control {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   /* Color de fondo del formulario */
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto del formulario */
 }
 .navbar .btn-success {
-  background-color: var(--color-verde);
+  background-color: #006400;
   /* Color de fondo del botón "Buscar" */
-  border-color: var(--color-verde);
+  border-color: #006400;
   /* Color del borde del botón "Buscar" */
 }
 .navbar .offcanvas-header {
-  background-color: var(--color-oscuro);
+  background-color: #1e2a38;
   /* Color de fondo del encabezado del menú offcanvas */
-  border-bottom: 1px solid var(--color-verde);
+  border-bottom: 1px solid #006400;
   /* Borde inferior del encabezado */
 }
 .navbar .offcanvas-title {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto del título del menú offcanvas */
 }
 .navbar .offcanvas-body {
-  background-color: var(--color-oscuro);
+  background-color: #1e2a38;
   /* Color de fondo del cuerpo del menú offcanvas */
 }
 .navbar .navbar-nav .dropdown {
@@ -98,7 +86,7 @@
   /* Posición relativa para el menú desplegable */
 }
 .navbar .navbar-nav .dropdown-toggle {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del enlace del menú desplegable */
   font-size: 16px;
   /* Tamaño del texto */
@@ -106,11 +94,11 @@
   /* Transición de color */
 }
 .navbar .navbar-nav .dropdown-toggle:hover {
-  color: var(--color-amarillo);
+  color: #ffa63d;
   /* Color al pasar el mouse por encima del enlace */
 }
 .navbar .dropdown-menu {
-  background-color: var(--color-oscuro);
+  background-color: #1e2a38;
   /* Color de fondo del menú desplegable */
   border: none;
   /* Eliminar el borde */
@@ -122,7 +110,7 @@
   /* Sombra */
 }
 .navbar .dropdown-item {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto del menú desplegable */
   font-size: 14px;
   /* Tamaño del texto */
@@ -130,9 +118,9 @@
   /* Transición de color de fondo */
 }
 .navbar .dropdown-item:hover {
-  background-color: var(--color-oscuro);
+  background-color: #1e2a38;
   /* Color de fondo al pasar el mouse por encima */
-  color: var(--color-amarillo);
+  color: #ffa63d;
   /* Color del texto al pasar el mouse por encima */
 }
 .navbar .navbar-nav.social-icons {
@@ -143,7 +131,7 @@
   /* Alinear verticalmente al centro */
 }
 .navbar .navbar-social-title {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del título */
   font-size: 1rem;
   /* Tamaño del título */
@@ -156,19 +144,19 @@
   /* Tamaño de los íconos */
   margin: 0 10px;
   /* Espaciado entre los íconos */
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color de los íconos */
   transition: color 0.3s;
   /* Transición de color */
 }
 .navbar .navbar-nav.social-icons .nav-link:hover {
-  color: var(--color-amarillo);
+  color: #ffa63d;
   /* Color al pasar el mouse por encima de los íconos */
 }
 .navbar .form-control {
-  background-color: var(--color-formCTR);
+  background-color: #ffffff;
   /* Color de fondo del formulario */
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto del formulario */
   border: none;
   /* Eliminar el borde */
@@ -180,21 +168,21 @@
   /* Transición de color de fondo */
 }
 .navbar .form-control:focus {
-  background-color: var(--color-formCTR);
+  background-color: #1e2a38;
   /* Color de fondo al enfocar */
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto al enfocar */
   outline: none;
   /* Eliminar el contorno al enfocar */
 }
 .navbar .btn-success {
-  background-color: var(--color-verde);
+  background-color: #006400;
   /* Color de fondo del botón "Buscar" */
   border: none;
   /* Eliminar el borde del botón */
 }
 .navbar .btn-success:hover {
-  background-color: var(--color-amarillo);
+  background-color: #ffa63d;
   /* Color de fondo del botón "Buscar" */
   border: none;
   /* Eliminar el borde del botón */
@@ -205,12 +193,12 @@
 .navbar .navbar-contact-title {
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .navbar .navbar-contact-info {
   font-size: 12px;
-  color: #ccc;
+  color: #ffffff;
   line-height: 1.5;
 }
 .navbar .navbar-contact-info i {
@@ -231,18 +219,18 @@
 .footer {
   margin: auto;
   padding: 50px 0;
-  color: var(--color-blanco);
+  color: #ffffff;
 }
 
 /* Estilos para los enlaces del menú */
 footer a {
-  color: var(--color-blanco);
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 footer a:hover {
-  color: var(--color-amarillo);
+  color: #ffa63d;
 }
 
 /* Estilos para el copy */
@@ -252,14 +240,13 @@ footer p {
 
 /* Estilos para los íconos de redes sociales */
 .list-inline-item a {
-  color: var(--color-blanco);
+  color: #ffffff;
   font-size: 2rem;
   margin-right: 1rem;
   transition: color 0.3s;
 }
-
 .list-inline-item a:hover {
-  color: var(--color-amarillo);
+  color: #ffa63d;
 }
 
 /* Estilos Index */
@@ -290,7 +277,7 @@ footer p {
   /* Espaciado interno */
 }
 .carousel .carousel-caption h5 {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del título */
   font-size: 24px;
   /* Tamaño del título */
@@ -298,7 +285,7 @@ footer p {
   /* Espaciado inferior */
 }
 .carousel .carousel-caption p {
-  color: var(--color-blanco);
+  color: #ffffff;
   /* Color del texto */
   font-size: 16px;
   /* Tamaño del texto */
@@ -306,7 +293,7 @@ footer p {
 
 /* Estilos para la Seccion Nuestros Destinos */
 .adventures-section {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   /* Color de fondo de la sección */
   padding: 100px 0;
   /* Espaciado vertical */
@@ -314,7 +301,7 @@ footer p {
 .adventures-section .adventures-section h2 {
   font-size: 2, 5rem;
   /* Tamaño del título */
-  color: var(--color-negro);
+  color: #333333;
   /* Color del texto */
   margin-bottom: 30px;
   /* Espaciado inferior */
@@ -344,7 +331,7 @@ footer p {
 .adventures-section .adventure-card h2.card-title {
   font-size: 24px;
   /* Tamaño del título */
-  color: var(--color-oscuro);
+  color: #1e2a38;
   /* Color del texto del título */
   margin-bottom: 10px;
   /* Espaciado inferior */
@@ -352,7 +339,7 @@ footer p {
 .adventures-section .adventure-card p.card-text {
   font-size: 16px;
   /* Tamaño del texto */
-  color: var(--color-gris);
+  color: #333333;
   /* Color del texto */
 }
 
@@ -377,8 +364,12 @@ footer p {
 .cta-section .cta-content {
   position: relative;
   text-align: center;
-  padding: 100px 0;
-  color: var(--color-gris);
+  padding: 20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Color de fondo con transparencia */
+  border-radius: 10px;
+  /* Agregar esquinas redondeadas */
   z-index: 1;
 }
 .cta-section .cta-button {
@@ -387,7 +378,7 @@ footer p {
 
 /* Estilos para la Sección Nosotros */
 .about-section {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,12 +387,12 @@ footer p {
 .about-section .about-title {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-negro);
+  color: #333333;
   margin-bottom: 30px;
 }
 .about-section .about-text {
   font-size: 1rem;
-  color: #666666;
+  color: #333333;
   margin-bottom: 50px;
 }
 .about-section .about-img {
@@ -413,59 +404,41 @@ footer p {
 
 /* Estilos para la sección Nuestros Servicios */
 .activity-types-section {
-  background-color: var(--color-oscuro);
-  /* Color de fondo de la sección */
+  background-color: #1e2a38;
   padding: 100px 0;
-  /* Espaciado vertical */
 }
-.activity-types-section .activity-types-section h2 {
-  font-size: 2, 5rem;
-  /* Tamaño del título */
-  color: var(--color-blanco);
-  /* Color del texto */
+.activity-types-section h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
   margin-bottom: 30px;
-  /* Espaciado inferior */
 }
 .activity-types-section .activity-card {
   border: none;
-  /* Sin borde */
   border-radius: 8px;
-  /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra */
   transition: transform 0.3s;
-  /* Transición de transformación */
   background-size: cover;
-  /* Ajustar la imagen de fondo para cubrir todo el contenedor */
   background-position: center;
-  /* Centrar la imagen de fondo */
   height: 300px;
-  /* Altura fija para todas las tarjetas */
+  position: relative;
 }
 .activity-types-section .activity-card:hover {
   transform: translateY(-5px);
-  /* Levantar la tarjeta al pasar el mouse por encima */
 }
 .activity-types-section .activity-card .card-body {
   padding: 20px;
-  /* Espaciado interno */
 }
 .activity-types-section .activity-card h3.card-title {
   font-size: 24px;
-  /* Tamaño del título */
-  color: var(--color-blanco);
-  /* Color del texto del título */
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo semitransparente */
   padding: 10px 0;
-  /* Espaciado interno del título */
   border-radius: 0 0 8px 8px;
-  /* Bordes redondeados solo en la parte inferior */
 }
 
 /* Estilos para el Formulario de Suscripción */
 .subscribe-section {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   padding: 50px 0;
   display: flex;
   align-items: center;
@@ -475,12 +448,12 @@ footer p {
 .subscribe-section .subscribe-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-oscuro);
+  color: #1e2a38;
   margin-bottom: 20px;
 }
 .subscribe-section .subscribe-text {
   font-size: 1rem;
-  color: var(--color-gris);
+  color: #333333;
   margin-bottom: 30px;
 }
 .subscribe-section .subscribe-form {
@@ -518,7 +491,7 @@ footer p {
   position: relative;
   text-align: center;
   padding: 100px 0;
-  color: var(--color-blanco);
+  color: #ffffff;
   z-index: 1;
 }
 .banner .cta-button {
@@ -538,29 +511,29 @@ footer p {
   margin-bottom: 20px;
 }
 .contact-page-section .section-heading p {
-  color: var(--color-oscuro);
+  color: #1e2a38;
 }
 .contact-page-section .contact-from-wrap {
   margin-bottom: 30px;
 }
 .contact-page-section .contact-from input,
 .contact-page-section .contact-from textarea {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--color-oscuro);
+  border: 1px solid #1e2a38;
   border-radius: 5px;
   margin-bottom: 15px;
 }
 .contact-page-section .contact-from input:focus,
 .contact-page-section .contact-from textarea:focus {
-  background-color: var(--color-blanco);
-  border: 2px solid var(--color-verde);
-  color: var(--color-oscuro);
+  background-color: #ffffff;
+  border: 2px solid #006400;
+  color: #1e2a38;
 }
 .contact-page-section .contact-from .btn-primary {
-  background-color: var(--color-verde);
-  color: var(--color-oscuro);
+  background-color: #006400;
+  color: #1e2a38;
   border: none;
   border-radius: 30px;
   padding: 15px 30px;
@@ -572,18 +545,18 @@ footer p {
   transition: background-color 0.3s ease;
 }
 .contact-page-section .contact-from .btn-primary:hover {
-  background-color: var(--color-amarillo);
-  color: var(--color-oscuro);
+  background-color: #ffa63d;
+  color: #1e2a38;
 }
 
 /* Estilos para la sección de detalles de contacto */
 .contact-detail-wrap {
-  background-color: var(--color-oscuro);
+  background-color: #1e2a38;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: var(--color-blanco);
+  color: #ffffff;
 }
 .contact-detail-wrap .contact-detail-wrap h3 {
   margin-bottom: 20px;
@@ -607,16 +580,16 @@ footer p {
 .contact-detail-wrap .details-list .icon {
   font-size: 24px;
   margin-right: 15px;
-  color: var(--color-verde);
+  color: #006400;
 }
 .contact-detail-wrap .details-content h4 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: var(--color-blanco);
+  color: #ffffff;
   text-align: left;
 }
 .contact-detail-wrap .details-content span {
-  color: var(--color-blanco);
+  color: #ffffff;
   text-align: left;
 }
 .contact-detail-wrap .social-links {
@@ -625,7 +598,7 @@ footer p {
 .contact-detail-wrap .social-links h3 {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: var(--color-blanco);
+  color: #ffffff;
 }
 .contact-detail-wrap .social-links ul {
   list-style: none;
@@ -638,11 +611,11 @@ footer p {
 }
 .contact-detail-wrap .social-links a {
   font-size: 28px;
-  color: var(--color-verde);
+  color: #006400;
   transition: color 0.3s ease;
 }
 .contact-detail-wrap .social-links a:hover {
-  color: #e6b800;
+  color: #ffa63d;
 }
 
 /*  Estilos Detalle de destinos */
@@ -668,7 +641,7 @@ footer p {
   position: relative;
   text-align: center;
   padding: 20px;
-  color: var(--color-blanco);
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
   /* Color de fondo con transparencia */
   border-radius: 10px;
@@ -695,8 +668,8 @@ footer p {
   height: auto;
 }
 .destino-section .package-meta ul {
-  background-color: var(--color-oscuro);
-  color: var(--color-blanco);
+  background-color: #1e2a38;
+  color: #ffffff;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -708,7 +681,7 @@ footer p {
 }
 .destino-section .package-meta i {
   margin-right: 5px;
-  color: var(--color-blanco);
+  color: #ffffff;
 }
 .destino-section .nav-tabs {
   border: none;
@@ -719,18 +692,18 @@ footer p {
 }
 .destino-section .nav-tabs .nav-link {
   font-weight: bold;
-  color: var(--color-oscuro);
+  color: #1e2a38;
   border: none;
   border-radius: 0;
 }
 .destino-section .nav-tabs .nav-link.active {
-  color: var(--color-verde);
+  color: #006400;
   background-color: transparent;
-  border-bottom: 3px solid var(--color-verde);
+  border-bottom: 3px solid #006400;
 }
 .destino-section .tab-content {
   padding: 20px;
-  border: 1px solid var(--color-gris);
+  border: 1px solid #333333;
   border-top: none;
   /* Estilos para el programa */
 }
@@ -754,7 +727,7 @@ footer p {
 }
 .destino-section .tab-content .timeline-content {
   padding: 20px 0;
-  border-bottom: 1px solid var(--color-gris);
+  border-bottom: 1px solid #333333;
 }
 .destino-section .tab-content .day-count {
   font-size: 18px;
@@ -777,8 +750,8 @@ footer p {
   /* Fin form de reservas */
 }
 .destino-reserva .package-price {
-  background-color: var(--color-verde);
-  color: var(--color-blanco);
+  background-color: #006400;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
   margin-bottom: 50px;
@@ -790,7 +763,7 @@ footer p {
   line-height: 1.1;
 }
 .destino-reserva .reservation-form-wrap {
-  background-color: var(--color-blanco);
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -809,23 +782,15 @@ footer p {
 .destino-reserva .reservation-form-wrap .form-control {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--color-negro);
+  border: 1px solid #333333;
   border-radius: 5px;
   transition: border-color 0.3s ease;
 }
 .destino-reserva .reservation-form-wrap .form-control:focus {
-  border-color: var(--color-verde);
-}
-.destino-reserva .reservation-form-wrap .btn-primary {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-color: #006400;
 }
 .destino-reserva .widget-bg {
-  background-color: var(--color-claro);
+  background-color: #f5f5f5;
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -834,13 +799,13 @@ footer p {
 .destino-reserva .information-content h5 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-negro);
+  color: #333333;
   margin-bottom: 10px;
 }
 .destino-reserva .information-content h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-negro);
+  color: #333333;
   margin-bottom: 20px;
 }
 .destino-reserva .information-content p {
@@ -852,8 +817,8 @@ footer p {
 .destino-reserva .button-primary {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--color-verde);
-  color: var(--color-blanco);
+  background-color: #006400;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   border: none;
@@ -862,7 +827,9 @@ footer p {
   transition: background-color 0.3s ease;
 }
 .destino-reserva .button-primary:hover {
-  background-color: var(--color-amarillo);
+  background-color: v #ffa63d;
 }
+
+/* Servicios*/
 
 /*# sourceMappingURL=style.css.map */

@@ -15,45 +15,45 @@
 
     /* Estilos para los enlaces del menú de navegación */
     .navbar-nav .nav-link {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color de los enlaces */
     }
 
     .navbar-nav .nav-link:hover {
-        color: var(--color-amarillo);
+        color: $color-amarillo;
         /* Color al pasar el mouse por encima de los enlaces */
     }
 
     /* Estilos para el botón de búsqueda */
     .form-control {
-        background-color: var(--color-blanco);
+        background-color: $color-blanco;
         /* Color de fondo del formulario */
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto del formulario */
-    }
+        }
 
     .btn-success {
-        background-color: var(--color-verde);
+        background-color: $color-verde;
         /* Color de fondo del botón "Buscar" */
-        border-color: var(--color-verde);
+        border-color: $color-verde;
         /* Color del borde del botón "Buscar" */
     }
 
     /* Estilos para el menú offcanvas */
     .offcanvas-header {
-        background-color: var(--color-oscuro);
+        background-color: $color-oscuro;
         /* Color de fondo del encabezado del menú offcanvas */
-        border-bottom: 1px solid var(--color-verde);
+        border-bottom: 1px solid $color-verde;
         /* Borde inferior del encabezado */
     }
 
     .offcanvas-title {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto del título del menú offcanvas */
     }
 
     .offcanvas-body {
-        background-color: var(--color-oscuro);
+        background-color: $color-oscuro;
         /* Color de fondo del cuerpo del menú offcanvas */
     }
 
@@ -64,7 +64,7 @@
     }
 
     .navbar-nav .dropdown-toggle {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del enlace del menú desplegable */
         font-size: 16px;
         /* Tamaño del texto */
@@ -73,12 +73,12 @@
     }
 
     .navbar-nav .dropdown-toggle:hover {
-        color: var(--color-amarillo);
+        color: $color-amarillo;
         /* Color al pasar el mouse por encima del enlace */
     }
 
     .dropdown-menu {
-        background-color: var(--color-oscuro);
+        background-color: $color-oscuro;
         /* Color de fondo del menú desplegable */
         border: none;
         /* Eliminar el borde */
@@ -91,7 +91,7 @@
     }
 
     .dropdown-item {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto del menú desplegable */
         font-size: 14px;
         /* Tamaño del texto */
@@ -100,9 +100,9 @@
     }
 
     .dropdown-item:hover {
-        background-color: var(--color-oscuro);
+        background-color: $color-oscuro;
         /* Color de fondo al pasar el mouse por encima */
-        color: var(--color-amarillo);
+        color: $color-amarillo;
         /* Color del texto al pasar el mouse por encima */
     }
 
@@ -116,7 +116,7 @@
     }
 
     .navbar-social-title {
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del título */
         font-size: 1rem;
         /* Tamaño del título */
@@ -130,22 +130,22 @@
         /* Tamaño de los íconos */
         margin: 0 10px;
         /* Espaciado entre los íconos */
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color de los íconos */
         transition: color 0.3s;
         /* Transición de color */
     }
 
     .navbar-nav.social-icons .nav-link:hover {
-        color: var(--color-amarillo);
+        color: $color-amarillo;
         /* Color al pasar el mouse por encima de los íconos */
     }
 
     /* Estilos para el formulario de búsqueda */
     .form-control {
-        background-color: var(--color-formCTR);
+        background-color: $color-blanco;
         /* Color de fondo del formulario */
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto del formulario */
         border: none;
         /* Eliminar el borde */
@@ -158,23 +158,23 @@
     }
 
     .form-control:focus {
-        background-color: var(--color-formCTR);
+        background-color: $color-oscuro;
         /* Color de fondo al enfocar */
-        color: var(--color-blanco);
+        color: $color-blanco;
         /* Color del texto al enfocar */
         outline: none;
         /* Eliminar el contorno al enfocar */
     }
 
     .btn-success {
-        background-color: var(--color-verde);
+        background-color: $color-verde;
         /* Color de fondo del botón "Buscar" */
         border: none;
         /* Eliminar el borde del botón */
     }
 
     .btn-success:hover {
-        background-color: var(--color-amarillo);
+        background-color: $color-amarillo;
         /* Color de fondo del botón "Buscar" */
         border: none;
         /* Eliminar el borde del botón */
@@ -188,13 +188,13 @@
     .navbar-contact-title {
         font-size: 14px;
         font-weight: bold;
-        color: #fff;
+        color: $color-blanco;
         margin-bottom: 10px;
     }
 
     .navbar-contact-info {
         font-size: 12px;
-        color: #ccc;
+        color: $color-blanco;
         line-height: 1.5;
     }
 
