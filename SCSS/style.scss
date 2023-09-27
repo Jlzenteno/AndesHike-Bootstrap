@@ -682,8 +682,135 @@
     }
 
     .button-primary:hover {
-        background-color: v$color-amarillo;
+        background-color: $color-amarillo;
     }
 }
 
-/* Servicios*/ 
+// Paginas de Actividades
+
+.Actividades-description {
+    background-color: $color-blanco;
+    padding: 100px 0;
+
+    h1 {
+        font-size: 2rem;
+        color: $color-negro;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1.125rem;
+        color: $color-oscuro;
+        margin-bottom: 20px;
+    }
+}
+
+.actividades-routes {
+    background-color: $color-oscuro;
+
+
+    h2 {
+        font-size: 2rem;
+        color: $color-blanco;
+        margin-bottom: 30px;
+    }
+
+    .actividades-routes .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+
+        img {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+
+            h3.card-title {
+                font-size: 24px;
+                color: $color-blanco;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 10px 0;
+                border-radius: 0 0 8px 8px;
+            }
+
+            p.card-text {
+                font-size: 16px;
+                color: $color-gris;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.about-us {
+    padding: 100px 0;
+  
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .row {
+      align-items: center;
+  
+      .col-md-6 {
+        .about-image {
+          img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            float: left; // Alinea la imagen a la izquierda
+          }
+        }
+  
+        h2 {
+          font-size: 24px;
+          color: $color-oscuro;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 18px;
+          color: $color-oscuro;
+          margin-bottom: 20px;
+        }
+  
+        ul {
+          list-style-type: disc;
+          margin-left: 20px;
+          font-size: 18px;
+          color: $color-oscuro;
+  
+          li {
+            margin-bottom: 10px;
+          }
+        }
+  
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .col-md-6:last-child {
+      .about-image {
+        img {
+          float: right; // Alinea la segunda imagen a la derecha
+        }
+      }
+    }
+  }
+  
+  
+  
+  

@@ -827,9 +827,103 @@ footer p {
   transition: background-color 0.3s ease;
 }
 .destino-reserva .button-primary:hover {
-  background-color: v #ffa63d;
+  background-color: #ffa63d;
 }
 
-/* Servicios*/
+.Actividades-description {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+.Actividades-description h1 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.Actividades-description p {
+  font-size: 1.125rem;
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+
+.actividades-routes {
+  background-color: #1e2a38;
+}
+.actividades-routes h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.actividades-routes .actividades-routes .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+.actividades-routes .actividades-routes .card img {
+  border-radius: 8px 8px 0 0;
+}
+.actividades-routes .actividades-routes .card .card-body {
+  padding: 20px;
+}
+.actividades-routes .actividades-routes .card .card-body h3.card-title {
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  border-radius: 0 0 8px 8px;
+}
+.actividades-routes .actividades-routes .card .card-body p.card-text {
+  font-size: 16px;
+  color: #333333;
+}
+.actividades-routes .actividades-routes .card:hover {
+  transform: translateY(-5px);
+}
+
+.about-us {
+  padding: 100px 0;
+}
+.about-us h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-us .row {
+  align-items: center;
+}
+.about-us .row .col-md-6 .about-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  float: left;
+}
+.about-us .row .col-md-6 h2 {
+  font-size: 24px;
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+.about-us .row .col-md-6 p {
+  font-size: 18px;
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+.about-us .row .col-md-6 ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #1e2a38;
+}
+.about-us .row .col-md-6 ul li {
+  margin-bottom: 10px;
+}
+.about-us .row .col-md-6 strong {
+  font-weight: bold;
+}
+.about-us .col-md-6:last-child .about-image img {
+  float: right;
+}
 
 /*# sourceMappingURL=style.css.map */
