@@ -926,4 +926,30 @@ footer p {
   float: right;
 }
 
+.faqSection {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.faqSection .accordion-button {
+  background-color: #1e2a38;
+  color: #ffffff;
+}
+.faqSection .accordion-button:hover {
+  background-color: #ffffff;
+  border-color: #006400;
+  color: #006400;
+}
+.faqSection .accordion-body {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+.faqSection .accordion-body p {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

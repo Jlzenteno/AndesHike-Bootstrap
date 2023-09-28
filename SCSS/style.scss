@@ -9,808 +9,822 @@
 
 /* Estilos para el carrusel de Bootstrap */
 .carousel {
-    margin-top: 100px;
-    /* Espaciado superior */
-    padding: 1px;
+  margin-top: 100px;
+  /* Espaciado superior */
+  padding: 1px;
 
+  .carousel-inner {
+    border-radius: 8px;
+    /* Bordes redondeados para el contenido del carrusel */
+    overflow: hidden;
+    /* Ocultar contenido que sobrepase los bordes */
+  }
 
-    .carousel-inner {
-        border-radius: 8px;
-        /* Bordes redondeados para el contenido del carrusel */
-        overflow: hidden;
-        /* Ocultar contenido que sobrepase los bordes */
-    }
+  .carousel-item img {
+    max-height: 100%;
+    /* Altura máxima de las imágenes del carrusel */
+    object-fit: cover;
+    /* Ajustar imagen para llenar el contenedor */
+  }
 
-    .carousel-item img {
-        max-height: 100%;
-        /* Altura máxima de las imágenes del carrusel */
-        object-fit: cover;
-        /* Ajustar imagen para llenar el contenedor */
-    }
+  .carousel-caption {
+    background-color: rgba(30, 42, 56, 0.7);
+    /* Fondo semitransparente */
+    border-radius: 8px;
+    /* Bordes redondeados para la caja de texto */
+    padding: 10px;
+    /* Espaciado interno */
+  }
 
-    .carousel-caption {
-        background-color: rgba(30, 42, 56, 0.7);
-        /* Fondo semitransparente */
-        border-radius: 8px;
-        /* Bordes redondeados para la caja de texto */
-        padding: 10px;
-        /* Espaciado interno */
-    }
+  .carousel-caption h5 {
+    color: $color-blanco;
+    /* Color del título */
+    font-size: 24px;
+    /* Tamaño del título */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+  }
 
-    .carousel-caption h5 {
-        color: $color-blanco;
-        /* Color del título */
-        font-size: 24px;
-        /* Tamaño del título */
-        margin-bottom: 10px;
-        /* Espaciado inferior */
-    }
-
-    .carousel-caption p {
-        color: $color-blanco;
-        /* Color del texto */
-        font-size: 16px;
-        /* Tamaño del texto */
-    }
+  .carousel-caption p {
+    color: $color-blanco;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+  }
 }
 
 /* Estilos para la Seccion Nuestros Destinos */
 .adventures-section {
-    background-color: $color-blanco;
-    /* Color de fondo de la sección */
-    padding: 100px 0;
-    /* Espaciado vertical */
+  background-color: $color-blanco;
+  /* Color de fondo de la sección */
+  padding: 100px 0;
+  /* Espaciado vertical */
 
+  .adventures-section h2 {
+    font-size: 2, 5rem;
+    /* Tamaño del título */
+    color: $color-negro;
+    /* Color del texto */
+    margin-bottom: 30px;
+    /* Espaciado inferior */
+  }
 
-    .adventures-section h2 {
-        font-size: 2, 5rem;
-        /* Tamaño del título */
-        color: $color-negro;
-        /* Color del texto */
-        margin-bottom: 30px;
-        /* Espaciado inferior */
-    }
+  .adventure-card {
+    border: none;
+    /* Sin borde */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    transition: transform 0.3s;
+    /* Transición de transformación */
+  }
 
-    .adventure-card {
-        border: none;
-        /* Sin borde */
-        border-radius: 8px;
-        /* Bordes redondeados */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Sombra */
-        transition: transform 0.3s;
-        /* Transición de transformación */
-    }
+  .adventure-card:hover {
+    transform: translateY(-5px);
+    /* Levantar la tarjeta al pasar el mouse por encima */
+  }
 
-    .adventure-card:hover {
-        transform: translateY(-5px);
-        /* Levantar la tarjeta al pasar el mouse por encima */
-    }
+  .adventure-card img {
+    border-radius: 8px 8px 0 0;
+    /* Bordes redondeados solo en la parte superior */
+  }
 
-    .adventure-card img {
-        border-radius: 8px 8px 0 0;
-        /* Bordes redondeados solo en la parte superior */
-    }
+  .adventure-card .card-body {
+    padding: 20px;
+    /* Espaciado interno */
+  }
 
-    .adventure-card .card-body {
-        padding: 20px;
-        /* Espaciado interno */
-    }
+  .adventure-card h2.card-title {
+    font-size: 24px;
+    /* Tamaño del título */
+    color: $color-oscuro;
+    /* Color del texto del título */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+  }
 
-    .adventure-card h2.card-title {
-        font-size: 24px;
-        /* Tamaño del título */
-        color: $color-oscuro;
-        /* Color del texto del título */
-        margin-bottom: 10px;
-        /* Espaciado inferior */
-    }
-
-    .adventure-card p.card-text {
-        font-size: 16px;
-        /* Tamaño del texto */
-        color: $color-gris;
-        /* Color del texto */
-    }
+  .adventure-card p.card-text {
+    font-size: 16px;
+    /* Tamaño del texto */
+    color: $color-gris;
+    /* Color del texto */
+  }
 }
 
 /* Estilos para la sección de "Call to Action" */
 .cta-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .cta-content {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
+    text-align: center;
+    padding: 20px;
+    color: $color-blanco;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Color de fondo con transparencia */
+    border-radius: 10px;
+    /* Agregar esquinas redondeadas */
+    z-index: 1;
+  }
 
-
-    .video-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    .cta-content {
-        position: relative;
-        text-align: center;
-        padding: 20px;
-        color: $color-blanco;
-        background-color: rgba(0, 0, 0, 0.6);
-        /* Color de fondo con transparencia */
-        border-radius: 10px;
-        /* Agregar esquinas redondeadas */
-        z-index: 1;
-    }
-
-    .cta-button {
-        margin-top: 20px;
-    }
+  .cta-button {
+    margin-top: 20px;
+  }
 }
 
 /* Estilos para la Sección Nosotros */
 .about-section {
-    background-color: $color-blanco;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
+  background-color: $color-blanco;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
 
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-negro;
+    margin-bottom: 30px;
+  }
 
-    .about-title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $color-negro;
-        margin-bottom: 30px;
-    }
+  .about-text {
+    font-size: 1rem;
+    color: $color-gris;
+    margin-bottom: 50px;
+  }
 
-    .about-text {
-        font-size: 1rem;
-        color: $color-gris;
-        margin-bottom: 50px;
-    }
-
-    .about-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+  .about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Estilos para la sección Nuestros Servicios */
 .activity-types-section {
-    background-color: $color-oscuro;
-    padding: 100px 0;
+  background-color: $color-oscuro;
+  padding: 100px 0;
 
-    h2 {
-        font-size: 2.5rem;
-        color: $color-blanco;
-        margin-bottom: 30px;
+  h2 {
+    font-size: 2.5rem;
+    color: $color-blanco;
+    margin-bottom: 30px;
+  }
+
+  .activity-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-5px);
     }
 
-    .activity-card {
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        position: relative;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        h3.card-title {
-            font-size: 24px;
-            color: $color-blanco;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-            border-radius: 0 0 8px 8px;
-        }
+    .card-body {
+      padding: 20px;
     }
+
+    h3.card-title {
+      font-size: 24px;
+      color: $color-blanco;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      border-radius: 0 0 8px 8px;
+    }
+  }
 }
 
 /* Estilos para el Formulario de Suscripción */
 .subscribe-section {
-    background-color: $color-blanco;
-    padding: 50px 0;
+  background-color: $color-blanco;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+
+  .subscribe-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-oscuro;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-text {
+    font-size: 1rem;
+    color: $color-gris;
+    margin-bottom: 30px;
+  }
+
+  .subscribe-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 400px;
+  }
 
-
-    .subscribe-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $color-oscuro;
-        margin-bottom: 20px;
-    }
-
-    .subscribe-text {
-        font-size: 1rem;
-        color: $color-gris;
-        margin-bottom: 30px;
-    }
-
-    .subscribe-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input-group {
-        width: 100%;
-        max-width: 400px;
-        display: flex;
-        margin-bottom: 20px;
-    }
+  .input-group {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    margin-bottom: 20px;
+  }
 }
 
 /* Estilos Banner */
 
 /* Estilos para la sección de llamada a la acción con video de fondo */
 .banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .cta-content {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
+    text-align: center;
+    padding: 100px 0;
+    color: $color-blanco;
+    z-index: 1;
+  }
 
-    .video-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    .cta-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 0;
-        color: $color-blanco;
-        z-index: 1;
-    }
-
-    .cta-button {
-        margin-top: 20px;
-    }
+  .cta-button {
+    margin-top: 20px;
+  }
 }
 
 /* Estilos Pagina de conctacto */
 /* Estilo caja de contacto */
 .contact-page-section {
-    padding: 50px 0;
+  padding: 50px 0;
 
+  .section-heading {
+    text-align: center;
+  }
 
-    .section-heading {
-        text-align: center;
-    }
+  .section-heading h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-    .section-heading h2 {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
+  .section-heading p {
+    color: $color-oscuro;
+  }
 
-    .section-heading p {
-        color: $color-oscuro;
-    }
+  .contact-from-wrap {
+    margin-bottom: 30px;
+  }
 
-    .contact-from-wrap {
-        margin-bottom: 30px;
-    }
+  .contact-from input,
+  .contact-from textarea {
+    background-color: $color-blanco;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $color-oscuro;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
 
-    .contact-from input,
-    .contact-from textarea {
-        background-color: $color-blanco;
-        width: 100%;
-        padding: 10px;
-        border: 1px solid $color-oscuro;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
+  .contact-from input:focus,
+  .contact-from textarea:focus {
+    background-color: $color-blanco;
+    border: 2px solid $color-verde;
+    color: $color-oscuro;
+  }
 
-    .contact-from input:focus,
-    .contact-from textarea:focus {
-        background-color: $color-blanco;
-        border: 2px solid $color-verde;
-        color: $color-oscuro;
-    }
+  .contact-from .btn-primary {
+    background-color: $color-verde;
+    color: $color-oscuro;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-    .contact-from .btn-primary {
-        background-color: $color-verde;
-        color: $color-oscuro;
-        border: none;
-        border-radius: 30px;
-        padding: 15px 30px;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .contact-from .btn-primary:hover {
-        background-color: $color-amarillo;
-        color: $color-oscuro;
-    }
+  .contact-from .btn-primary:hover {
+    background-color: $color-amarillo;
+    color: $color-oscuro;
+  }
 }
 
 /* Estilos para la sección de detalles de contacto */
 .contact-detail-wrap {
-    background-color: $color-oscuro;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: $color-oscuro;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: $color-blanco;
+
+  .contact-detail-wrap h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .contact-detail-wrap p {
+    margin-bottom: 30px;
+  }
+
+  .details-list {
+    margin-top: 30px;
+  }
+
+  .details-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .details-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .details-list .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: $color-verde;
+  }
+
+  .details-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
     color: $color-blanco;
+    text-align: left;
+  }
 
-    .contact-detail-wrap h3 {
-        margin-bottom: 20px;
-        font-size: 28px;
-    }
+  .details-content span {
+    color: $color-blanco;
+    text-align: left;
+  }
 
-    .contact-detail-wrap p {
-        margin-bottom: 30px;
-    }
+  .social-links {
+    margin-top: 40px;
+  }
 
-    .details-list {
-        margin-top: 30px;
-    }
+  .social-links h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: $color-blanco;
+  }
 
-    .details-list ul {
-        list-style: none;
-        padding: 0;
-    }
+  .social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 
-    .details-list li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  .social-links li {
+    margin-right: 20px;
+  }
 
-    .details-list .icon {
-        font-size: 24px;
-        margin-right: 15px;
-        color: $color-verde;
-    }
+  .social-links a {
+    font-size: 28px;
+    color: $color-verde;
+    transition: color 0.3s ease;
+  }
 
-    .details-content h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        color: $color-blanco;
-        text-align: left;
-    }
-
-    .details-content span {
-        color: $color-blanco;
-        text-align: left;
-    }
-
-    .social-links {
-        margin-top: 40px;
-    }
-
-    .social-links h3 {
-        font-size: 1rem;
-        margin-bottom: 20px;
-        color: $color-blanco;
-    }
-
-    .social-links ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-links li {
-        margin-right: 20px;
-    }
-
-    .social-links a {
-        font-size: 28px;
-        color: $color-verde;
-        transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-        color: $color-amarillo;
-    }
+  .social-links a:hover {
+    color: $color-amarillo;
+  }
 }
 
 /*  Estilos Detalle de destinos */
 
 /* Estilos para la sección banner con video de fondo */
 .banner-dest {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+
+  .video-background-dest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .banner-cont {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-
-
-    .video-background-dest {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    .banner-cont {
-        position: relative;
-        text-align: center;
-        padding: 20px;
-        color: $color-blanco;
-        background-color: rgba(0, 0, 0, 0.6);
-        /* Color de fondo con transparencia */
-        border-radius: 10px;
-        /* Agregar esquinas redondeadas */
-        z-index: 1;
-    }
+    text-align: center;
+    padding: 20px;
+    color: $color-blanco;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Color de fondo con transparencia */
+    border-radius: 10px;
+    /* Agregar esquinas redondeadas */
+    z-index: 1;
+  }
 }
 
 /* Sección del detalle del paquete */
 .destino-section {
-    padding: 50px 0;
-    margin-bottom: 30px;
+  padding: 50px 0;
+  margin-bottom: 30px;
 
-    /* Título principal del paquete */
-    .destino-section-cont h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
+  /* Título principal del paquete */
+  .destino-section-cont h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para la imagen destacada del paquete */
+  .destino-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para los metadatos del paquete (duración, personas, ubicación) */
+  .package-meta ul {
+    background-color: $color-oscuro;
+    color: $color-blanco;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .package-meta li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .package-meta i {
+    margin-right: 5px;
+    color: $color-blanco;
+  }
+
+  /* Estilos para la pestaña */
+  .nav-tabs {
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav-tabs .nav-item {
+    margin-bottom: 15px;
+  }
+
+  .nav-tabs .nav-link {
+    font-weight: bold;
+    color: $color-oscuro;
+    border: none;
+    border-radius: 0;
+  }
+
+  .nav-tabs .nav-link.active {
+    color: $color-verde;
+    background-color: transparent;
+    border-bottom: 3px solid $color-verde;
+  }
+
+  /* Estilos para el contenido de las pestañas */
+  .tab-content {
+    padding: 20px;
+    border: 1px solid $color-gris;
+    border-top: none;
+
+    .overview-content ul {
+      list-style: disc;
+      padding-left: 20px;
     }
 
-    /* Estilos para la imagen destacada del paquete */
-    .destino-image img {
-        width: 100%;
-        height: auto;
+    /* Estilos para el programa */
+    .itinerary-content h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    /* Estilos para los metadatos del paquete (duración, personas, ubicación) */
-    .package-meta ul {
-        background-color: $color-oscuro;
-        color: $color-blanco;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        padding: 5px;
+    .itinerary-content span {
+      font-size: 14px;
+      font-weight: normal;
+      color: var(--color-gris);
     }
 
-    .package-meta li {
-        font-size: 16px;
-        margin-bottom: 10px;
+    .itinerary-timeline-wrap ul {
+      padding: 0;
+      list-style: none;
     }
 
-    .package-meta i {
-        margin-right: 5px;
-        color: $color-blanco;
+    .timeline-content {
+      padding: 20px 0;
+      border-bottom: 1px solid $color-gris;
     }
 
-    /* Estilos para la pestaña */
-    .nav-tabs {
-        border: none;
-        background-color: transparent;
+    .day-count {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
-    .nav-tabs .nav-item {
-        margin-bottom: 15px;
+    .timeline-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
-    .nav-tabs .nav-link {
-        font-weight: bold;
-        color: $color-oscuro;
-        border: none;
-        border-radius: 0;
+    .timeline-content p {
+      font-size: 14px;
+      margin: 5px 0;
     }
-
-    .nav-tabs .nav-link.active {
-        color: $color-verde;
-        background-color: transparent;
-        border-bottom: 3px solid $color-verde;
-    }
-
-    /* Estilos para el contenido de las pestañas */
-    .tab-content {
-        padding: 20px;
-        border: 1px solid $color-gris;
-        border-top: none;
-
-
-        .overview-content ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        /* Estilos para el programa */
-        .itinerary-content h3 {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .itinerary-content span {
-            font-size: 14px;
-            font-weight: normal;
-            color: var(--color-gris);
-        }
-
-        .itinerary-timeline-wrap ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        .timeline-content {
-            padding: 20px 0;
-            border-bottom: 1px solid $color-gris;
-        }
-
-        .day-count {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .timeline-content h4 {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .timeline-content p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-    }
+  }
 }
 
 .destino-reserva {
+  /* Valor */
+  .package-price {
+    background-color: $color-verde;
+    color: $color-blanco;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
-    /* Valor */
-    .package-price {
-        background-color: $color-verde;
-        color: $color-blanco;
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
+    .package-price .price span {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+  }
 
-        .package-price .price span {
-            font-size: 30px;
-            font-weight: 900;
-            line-height: 1.1;
-        }
+  /* Formulario de reservas */
+  .reservation-form-wrap {
+    background-color: $color-blanco;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    .reservation-form h3 {
+      margin-bottom: 20px;
     }
 
-    /* Formulario de reservas */
-    .reservation-form-wrap {
-        background-color: $color-blanco;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
-        .reservation-form h3 {
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid $color-negro;
-            border-radius: 5px;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-control:focus {
-            border-color: $color-verde;
-        }
-
-
+    .form-group {
+      margin-bottom: 20px;
     }
 
-    /* Fin form de reservas */
-
-    .widget-bg {
-        background-color: $color-claro;
-        padding: 30px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+    .form-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
     }
 
-    .information-content h5 {
-        font-size: 18px;
-        font-weight: 600;
-        color: $color-negro;
-        margin-bottom: 10px;
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $color-negro;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
     }
 
-    .information-content h3 {
-        font-size: 28px;
-        font-weight: 700;
-        color: $color-negro;
-        margin-bottom: 20px;
+    .form-control:focus {
+      border-color: $color-verde;
     }
+  }
 
-    .information-content p {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #666;
-        margin-bottom: 20px;
-    }
+  /* Fin form de reservas */
 
-    .button-primary {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: $color-verde;
-        color: $color-blanco;
-        font-size: 16px;
-        font-weight: 600;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
+  .widget-bg {
+    background-color: $color-claro;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
 
-    .button-primary:hover {
-        background-color: $color-amarillo;
-    }
+  .information-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-negro;
+    margin-bottom: 10px;
+  }
+
+  .information-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: $color-negro;
+    margin-bottom: 20px;
+  }
+
+  .information-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .button-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $color-verde;
+    color: $color-blanco;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-primary:hover {
+    background-color: $color-amarillo;
+  }
 }
 
 // Paginas de Actividades
 
 .Actividades-description {
-    background-color: $color-blanco;
-    padding: 100px 0;
+  background-color: $color-blanco;
+  padding: 100px 0;
 
-    h1 {
-        font-size: 2rem;
-        color: $color-negro;
-        margin-bottom: 30px;
-    }
+  h1 {
+    font-size: 2rem;
+    color: $color-negro;
+    margin-bottom: 30px;
+  }
 
-    p {
-        font-size: 1.125rem;
-        color: $color-oscuro;
-        margin-bottom: 20px;
-    }
+  p {
+    font-size: 1.125rem;
+    color: $color-oscuro;
+    margin-bottom: 20px;
+  }
 }
 
 .actividades-routes {
-    background-color: $color-oscuro;
+  background-color: $color-oscuro;
 
+  h2 {
+    font-size: 2rem;
+    color: $color-blanco;
+    margin-bottom: 30px;
+  }
 
-    h2 {
-        font-size: 2rem;
+  .actividades-routes .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-body {
+      padding: 20px;
+
+      h3.card-title {
+        font-size: 24px;
         color: $color-blanco;
-        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+        border-radius: 0 0 8px 8px;
+      }
+
+      p.card-text {
+        font-size: 16px;
+        color: $color-gris;
+      }
     }
 
-    .actividades-routes .card {
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        background-size: cover;
-        background-position: center;
-        height: 550px;
-
-        img {
-            border-radius: 8px 8px 0 0;
-        }
-
-        .card-body {
-            padding: 20px;
-
-            h3.card-title {
-                font-size: 24px;
-                color: $color-blanco;
-                background-color: rgba(0, 0, 0, 0.7);
-                padding: 10px 0;
-                border-radius: 0 0 8px 8px;
-            }
-
-            p.card-text {
-                font-size: 16px;
-                color: $color-gris;
-            }
-        }
-
-        &:hover {
-            transform: translateY(-5px);
-        }
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 }
 
 .about-us {
-    padding: 100px 0;
-  
-    h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-  
-    .row {
-      align-items: center;
-  
-      .col-md-6 {
-        .about-image {
-          img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            float: left; // Alinea la imagen a la izquierda
-          }
-        }
-  
-        h2 {
-          font-size: 24px;
-          color: $color-oscuro;
-          margin-bottom: 20px;
-        }
-  
-        p {
-          font-size: 18px;
-          color: $color-oscuro;
-          margin-bottom: 20px;
-        }
-  
-        ul {
-          list-style-type: disc;
-          margin-left: 20px;
-          font-size: 18px;
-          color: $color-oscuro;
-  
-          li {
-            margin-bottom: 10px;
-          }
-        }
-  
-        strong {
-          font-weight: bold;
-        }
-      }
-    }
-  
-    .col-md-6:last-child {
+  padding: 100px 0;
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .row {
+    align-items: center;
+
+    .col-md-6 {
       .about-image {
         img {
-          float: right; // Alinea la segunda imagen a la derecha
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+          float: left; // Alinea la imagen a la izquierda
         }
+      }
+
+      h2 {
+        font-size: 24px;
+        color: $color-oscuro;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        color: $color-oscuro;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        font-size: 18px;
+        color: $color-oscuro;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+
+      strong {
+        font-weight: bold;
       }
     }
   }
-  
-  
-  
-  
+
+  .col-md-6:last-child {
+    .about-image {
+      img {
+        float: right; // Alinea la segunda imagen a la derecha
+      }
+    }
+  }
+}
+
+.faqSection {
+  background-color: $color-blanco;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  .accordion-button {
+    background-color: $color-oscuro;
+    color: $color-blanco;
+
+    &:hover {
+      background-color: $color-blanco;
+      border-color: $color-verde;
+      color: $color-verde;
+    }
+  }
+
+  .accordion-body {
+    background-color: $color-blanco;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
